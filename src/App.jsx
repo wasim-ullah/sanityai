@@ -5,6 +5,8 @@ import Features from './components/home/Features';
 import Monitoring from './components/home/Monitoring';
 import Taxability from './components/home/Taxability';
 import Exemptions from './components/home/Exemptions';
+import Integrations from './components/home/Integrations';
+import Implementation from './components/home/Implementation';
 import Testimonials from './components/home/Testimonials';
 import Footer from './components/common/Footer';
 
@@ -18,6 +20,8 @@ export default function App() {
       <Monitoring />
       <Taxability />
       <Exemptions />
+      <Integrations />
+      <Implementation />
       <Testimonials />
       <Footer />
     </div>

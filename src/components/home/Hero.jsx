@@ -5,7 +5,7 @@ import { WIDGET_BAR_CHART_HEIGHTS, WIDGET_ACTIVITIES, TRUSTED_COMPANIES } from '
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full bg-[var(--color-bg-dark)] pt-[110px] pb-16 md:pt-[130px] overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative w-full bg-[var(--color-bg-dark)] pt-[95px] pb-10 md:pt-[115px] overflow-hidden flex flex-col items-center justify-center">
       {/* 
         Symmetric Left & Right Grid Guidelines in the background.
         Aligned perfectly with the header guidelines.
@@ -32,7 +32,7 @@ export default function Hero() {
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px] flex flex-col items-center">
         {/* Heading */}
         <h1
-          className="text-white text-4xl sm:text-5xl md:text-[64px] tracking-tight leading-[1.0] md:leading-[64px] mb-6 max-w-4xl text-center"
+          className="text-white text-4xl sm:text-5xl md:text-[64px] tracking-tight leading-[1.0] md:leading-[64px] mb-4 max-w-4xl text-center"
           style={{
             fontFamily: '"Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
             fontWeight: 300
@@ -43,7 +43,7 @@ export default function Hero() {
 
         {/* Subheading */}
         <p
-          className="text-white text-sm sm:text-base md:text-[16px] leading-[19px] max-w-xl mb-8 text-center"
+          className="text-white text-sm sm:text-base md:text-[16px] leading-[19px] max-w-xl mb-6 text-center"
           style={{
             fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
             fontWeight: 400
@@ -61,7 +61,7 @@ export default function Hero() {
 
         {/* Unified Dashboard Mockup Box */}
         <div
-          className="relative w-full max-w-[1080px] aspect-[1080/576] bg-[rgba(3,29,19,0.25)] border-[0.09cqw] border-white/5 rounded-[0.37cqw] flex flex-row z-10 shadow-2xl mt-14 mb-14 overflow-hidden"
+          className="relative w-full max-w-[1080px] aspect-[1080/576] bg-[rgba(3,29,19,0.25)] border-[0.09cqw] border-white/5 rounded-[0.37cqw] flex flex-row z-10 shadow-2xl mt-8 mb-6 overflow-hidden"
           style={{ containerType: 'inline-size' }}
         >
 
@@ -202,7 +202,7 @@ export default function Hero() {
       </div>
 
       {/* Full-width horizontal line spanning left end to right end */}
-      <div className="w-full border-t border-white/5 mt-10 mb-10 z-10"></div>
+      <div className="w-full border-t border-white/5 mt-6 mb-6 z-10"></div>
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px] flex flex-col items-center">
         {/* Trusted By Logo Wall Section */}

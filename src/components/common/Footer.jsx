@@ -64,7 +64,7 @@ export default function Footer() {
       {/* BOX 2: Middle Links Section (25% height on desktop, stacking columns on mobile) */}
       <div className="relative z-10 w-full h-auto lg:h-[25%] flex items-center py-12 lg:py-0">
         <div className="w-full max-w-[1440px] mx-auto px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px]">
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-4 items-start">
+          <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-4 items-start">
             
             {/* Left Column: Logo + Copyright + SOC 2 (centered on mobile, left-aligned on desktop) */}
             <div className="col-span-12 lg:col-span-5 flex flex-col items-center lg:items-start text-center lg:text-left gap-3">
@@ -108,11 +108,12 @@ export default function Footer() {
             </div>
 
             {/* Right Columns: Links Flex Container (side-by-side and centered on mobile, right-aligned on desktop) */}
-            <div className="col-span-12 lg:col-span-7 flex flex-row justify-center lg:justify-end gap-6 sm:gap-10 lg:gap-10 xl:gap-14">
+            <div className="col-span-12 lg:col-span-7 w-full flex flex-col lg:flex-row justify-center lg:justify-end items-center lg:items-start gap-8 lg:gap-10 xl:gap-14">
               
               {/* Column 1: Company */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col items-center lg:items-start gap-3 w-full lg:w-auto">
                 <span 
+                  className="w-full text-center lg:text-left"
                   style={{
                     fontFamily: '"Roobert TRIAL", "Roobert TRIAL Placeholder", sans-serif',
                     fontWeight: 500,
@@ -132,15 +133,16 @@ export default function Footer() {
                     fontSize: '16px',
                     lineHeight: '19px'
                   }}
-                  className="hover:text-white transition-colors w-max"
+                  className="hover:text-white transition-colors w-full text-center lg:text-left"
                 >
                   Careers
                 </Link>
               </div>
               
               {/* Column 2: Socials */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col items-center lg:items-start gap-3 w-full lg:w-auto">
                 <span 
+                  className="w-full text-center lg:text-left"
                   style={{
                     fontFamily: '"Roobert TRIAL", "Roobert TRIAL Placeholder", sans-serif',
                     fontWeight: 500,
@@ -151,7 +153,7 @@ export default function Footer() {
                 >
                   SOCIALS
                 </span>
-                <div className="flex flex-col gap-2.5">
+                <div className="flex flex-col items-center lg:items-start gap-2.5 w-full">
                   <a 
                     href="https://linkedin.com" 
                     target="_blank" 
@@ -163,7 +165,7 @@ export default function Footer() {
                       fontSize: '16px',
                       lineHeight: '19px'
                     }}
-                    className="flex items-center gap-2 hover:text-white transition-colors w-max"
+                    className="flex items-center justify-center lg:justify-start gap-2 hover:text-white transition-colors w-full"
                   >
                     <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center shrink-0">
                       <svg className="w-2.5 h-2.5 text-[#2c9a6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
@@ -181,7 +183,7 @@ export default function Footer() {
                       fontSize: '16px',
                       lineHeight: '19px'
                     }}
-                    className="flex items-center gap-2 hover:text-white transition-colors w-max"
+                    className="flex items-center justify-center lg:justify-start gap-2 hover:text-white transition-colors w-full"
                   >
                     <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center shrink-0">
                       <svg className="w-2.5 h-2.5 text-[#2c9a6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
@@ -192,8 +194,9 @@ export default function Footer() {
               </div>
 
               {/* Column 3: Support */}
-              <div className="flex flex-col gap-3 items-start text-left">
+              <div className="flex flex-col items-center lg:items-start gap-3 w-full lg:w-auto">
                 <span 
+                  className="w-full text-center lg:text-left"
                   style={{
                     fontFamily: '"Roobert TRIAL", "Roobert TRIAL Placeholder", sans-serif',
                     fontWeight: 500,
@@ -204,7 +207,7 @@ export default function Footer() {
                 >
                   SUPPORT
                 </span>
-                <div className="flex flex-col gap-2.5 items-start">
+                <div className="flex flex-col items-center lg:items-start gap-2.5 w-full">
                   <Link 
                     to="/privacy" 
                     style={{
@@ -214,7 +217,7 @@ export default function Footer() {
                       fontSize: '16px',
                       lineHeight: '19px'
                     }}
-                    className="hover:text-white transition-colors w-max"
+                    className="hover:text-white transition-colors w-full text-center lg:text-left"
                   >
                     Privacy Policy
                   </Link>
@@ -227,7 +230,7 @@ export default function Footer() {
                       fontSize: '16px',
                       lineHeight: '19px'
                     }}
-                    className="hover:text-white transition-colors w-max"
+                    className="hover:text-white transition-colors w-full text-center lg:text-left"
                   >
                     Terms of use
                   </Link>
