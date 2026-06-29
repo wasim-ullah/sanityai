@@ -1,5 +1,6 @@
 import React from 'react';
 import set3Image from '../../assets/images/set3.png';
+import { EXEMPTIONS_TEXT } from '../../constants/exemptions';
 
 export default function Exemptions() {
   return (
@@ -43,7 +44,7 @@ export default function Exemptions() {
                 }}
                 className="uppercase font-medium"
               >
-                WHY TAXWIRE?
+                {EXEMPTIONS_TEXT.eyebrow}
               </span>
             </div>
 
@@ -59,7 +60,7 @@ export default function Exemptions() {
                 letterSpacing: '-0.02em'
               }}
             >
-              Exemption certificates
+              {EXEMPTIONS_TEXT.heading}
             </h2>
 
             {/* Description */}
@@ -73,7 +74,7 @@ export default function Exemptions() {
                 lineHeight: '22px'
               }}
             >
-              Understand your sales tax exposure. Our software + tax experts will help you understand exactly where you have nexus, which jurisdictions tax your products.
+              {EXEMPTIONS_TEXT.description}
             </p>
 
             {/* Action button */}
@@ -86,7 +87,7 @@ export default function Exemptions() {
                 lineHeight: '14px'
               }}
             >
-              <span>REQUEST DEMO</span>
+              <span>{EXEMPTIONS_TEXT.buttonText}</span>
               <svg 
                 className="w-3 h-3 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
                 viewBox="0 0 24 24" 

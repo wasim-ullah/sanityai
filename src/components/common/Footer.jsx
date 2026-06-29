@@ -1,10 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
 
 export default function Footer() {
+  const location = useLocation();
+  const isCompactFooter = location.pathname === '/about' || location.pathname.startsWith('/case-study');
+
   return (
-    <footer className="relative bg-[var(--color-bg-dark)] w-full overflow-hidden flex flex-col h-auto lg:h-[calc(100vh-64px)] min-h-[650px] lg:min-h-[500px] z-10 justify-between">
+    <footer className={`relative bg-[var(--color-bg-dark)] w-full overflow-hidden flex flex-col z-10 justify-between ${
+      isCompactFooter 
+        ? 'h-auto' 
+        : 'h-auto lg:h-[calc(100vh-64px)] min-h-[650px] lg:min-h-[500px]'
+    }`}>
       
       {/* Symmetric Left & Right Grid Guidelines */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden w-full hidden lg:block z-0">
@@ -22,7 +29,9 @@ export default function Footer() {
       </div>
 
       {/* BOX 1: Top Section (27% height on desktop, fluid typography on mobile) */}
-      <div className="relative z-10 w-full h-auto lg:h-[27%] flex items-center pt-16 pb-12 lg:py-0">
+      <div className={`relative z-10 w-full h-auto flex items-center ${
+        isCompactFooter ? 'py-16 lg:py-20' : 'lg:h-[27%] pt-16 pb-12 lg:py-0'
+      }`}>
         <div className="w-full max-w-[1440px] mx-auto px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px]">
           <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-16">
             <div className="w-full lg:max-w-[650px]">
@@ -62,7 +71,9 @@ export default function Footer() {
       <div className="w-full border-t border-white/5 relative z-10"></div>
 
       {/* BOX 2: Middle Links Section (25% height on desktop, stacking columns on mobile) */}
-      <div className="relative z-10 w-full h-auto lg:h-[25%] flex items-center py-12 lg:py-0">
+      <div className={`relative z-10 w-full h-auto flex items-center ${
+        isCompactFooter ? 'py-16 pb-20' : 'lg:h-[25%] py-12 lg:py-0'
+      }`}>
         <div className="w-full max-w-[1440px] mx-auto px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px]">
           <div className="w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-4 items-start">
             
@@ -242,41 +253,43 @@ export default function Footer() {
       </div>
 
       {/* Divider line 2: Spanning whole screen from left-most to right-most corner */}
-      <div className="w-full border-t border-white/5 relative z-10"></div>
+      {!isCompactFooter && <div className="w-full border-t border-white/5 relative z-10"></div>}
 
       {/* BOX 3: Bottom Section (48% height on desktop, contains massive background logo) */}
-      <div className="relative w-full h-[120px] sm:h-[150px] lg:h-[48%] z-10 flex items-end">
-        <div className="absolute bottom-0 left-6 right-6 lg:left-[97px] lg:right-[97px] xl:left-[162px] xl:right-[162px] h-[90px] sm:h-[120px] lg:h-[85%] flex items-end overflow-hidden">
-          <svg 
-            className="w-full h-auto text-white/[0.03]" 
-            viewBox="0 0 800 220" 
-            fill="none" 
-            stroke="currentColor" 
-            strokeWidth="0.8"
-          >
-            <g transform="translate(-42.5, 10) scale(8.5)" fill="#063a24">
-              <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-              <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-              <path d="M12 3v12" />
-            </g>
-            <text 
-              x="150" 
-              y="172" 
-              fontFamily="'Roobert TRIAL Variable Medium', 'Roobert TRIAL Variable Medium Placeholder', 'Roobert TRIAL Medium', 'Roobert', sans-serif" 
-              fontSize="200" 
-              fontWeight="500" 
-              letterSpacing="-0.03em" 
-              textLength="650"
-              lengthAdjust="spacingAndGlyphs"
-              fill="#063a24" 
+      {!isCompactFooter && (
+        <div className="relative w-full h-[120px] sm:h-[150px] lg:h-[48%] z-10 flex items-end">
+          <div className="absolute bottom-0 left-6 right-6 lg:left-[97px] lg:right-[97px] xl:left-[162px] xl:right-[162px] h-[90px] sm:h-[120px] lg:h-[85%] flex items-end overflow-hidden">
+            <svg 
+              className="w-full h-auto text-white/[0.03]" 
+              viewBox="0 0 800 220" 
+              fill="none" 
               stroke="currentColor" 
-              strokeWidth="0.6"
+              strokeWidth="0.8"
             >
-              Taxwire
-            </text>
-          </svg>
+              <g transform="translate(-42.5, 10) scale(8.5)" fill="#063a24">
+                <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
+                <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
+                <path d="M12 3v12" />
+              </g>
+              <text 
+                x="150" 
+                y="172" 
+                fontFamily="'Roobert TRIAL Variable Medium', 'Roobert TRIAL Variable Medium Placeholder', 'Roobert TRIAL Medium', 'Roobert', sans-serif" 
+                fontSize="200" 
+                fontWeight="500" 
+                letterSpacing="-0.03em" 
+                textLength="650"
+                lengthAdjust="spacingAndGlyphs"
+                fill="#063a24" 
+                stroke="currentColor" 
+                strokeWidth="0.6"
+              >
+                Taxwire
+              </text>
+            </svg>
+          </div>
         </div>
-      </div>
+      )}
 
     </footer>
   );

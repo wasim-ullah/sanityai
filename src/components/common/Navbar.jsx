@@ -1,41 +1,66 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../../constants/navbar';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const isAboutPage = location.pathname === '/about';
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[var(--color-bg-dark)] border-b border-white/5 w-full">
+    <header className={`fixed top-0 left-0 right-0 z-50 w-full transition-colors duration-200 ${
+      isAboutPage 
+        ? 'bg-white border-b border-black/[0.06] text-[#063322]' 
+        : 'bg-[var(--color-bg-dark)] border-b border-white/5 text-white'
+    }`}>
       {/* 
         Symmetric Left & Right Grid Guidelines in the background.
         Lines up exactly with the margins of the logo and action buttons.
       */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden w-full hidden lg:block">
-        {/* Left side guidelines */}
-        <div className="absolute top-0 bottom-0 w-px left-[46px] border-l border-white/5"></div>
-        <div className="absolute top-0 bottom-0 w-px left-[69px] border-l border-dashed border-white/6"></div>
-        <div className="absolute top-0 bottom-0 w-px left-[97px] border-l border-white/5"></div>
-        <div className="absolute top-0 bottom-0 w-px left-[128px] border-l border-dashed border-white/6 hidden xl:block"></div>
-        <div className="absolute top-0 bottom-0 w-px left-[162px] border-l border-white/5 hidden xl:block"></div>
+        {isAboutPage ? (
+          <>
+            {/* Left side guidelines - About Page (only two right-most lines) */}
+            <div className="absolute top-0 bottom-0 w-px left-[128px] border-l border-dashed border-black/[0.06] hidden xl:block"></div>
+            <div className="absolute top-0 bottom-0 w-px left-[162px] border-l border-black/[0.06] hidden xl:block"></div>
 
-        {/* Right side guidelines */}
-        <div className="absolute top-0 bottom-0 w-px right-[46px] border-r border-white/5"></div>
-        <div className="absolute top-0 bottom-0 w-px right-[69px] border-r border-dashed border-white/6"></div>
-        <div className="absolute top-0 bottom-0 w-px right-[97px] border-r border-white/5"></div>
-        <div className="absolute top-0 bottom-0 w-px right-[128px] border-r border-dashed border-white/6 hidden xl:block"></div>
-        <div className="absolute top-0 bottom-0 w-px right-[162px] border-r border-white/5 hidden xl:block"></div>
+            {/* Right side guidelines - About Page (only two left-most lines) */}
+            <div className="absolute top-0 bottom-0 w-px right-[128px] border-r border-dashed border-black/[0.06] hidden xl:block"></div>
+            <div className="absolute top-0 bottom-0 w-px right-[162px] border-r border-black/[0.06] hidden xl:block"></div>
+          </>
+        ) : (
+          <>
+            {/* Left side guidelines - Homepage */}
+            <div className="absolute top-0 bottom-0 w-px left-[46px] border-l border-white/5"></div>
+            <div className="absolute top-0 bottom-0 w-px left-[69px] border-l border-dashed border-white/6"></div>
+            <div className="absolute top-0 bottom-0 w-px left-[97px] border-l border-white/5"></div>
+            <div className="absolute top-0 bottom-0 w-px left-[128px] border-l border-dashed border-white/6 hidden xl:block"></div>
+            <div className="absolute top-0 bottom-0 w-px left-[162px] border-l border-white/5 hidden xl:block"></div>
+
+            {/* Right side guidelines - Homepage */}
+            <div className="absolute top-0 bottom-0 w-px right-[46px] border-r border-white/5"></div>
+            <div className="absolute top-0 bottom-0 w-px right-[69px] border-r border-dashed border-white/6"></div>
+            <div className="absolute top-0 bottom-0 w-px right-[97px] border-r border-white/5"></div>
+            <div className="absolute top-0 bottom-0 w-px right-[128px] border-r border-dashed border-white/6 hidden xl:block"></div>
+            <div className="absolute top-0 bottom-0 w-px right-[162px] border-r border-white/5 hidden xl:block"></div>
+          </>
+        )}
       </div>
 
       <div className="w-full h-16 flex items-center justify-between relative z-10 px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px] transition-[padding] duration-200 ease-out">
         {/* Left Side: Logo & Main Navigation */}
         <div className="flex items-center gap-[24px]">
           {/* Taxwire Logo & Icon */}
-          <Link to="/" className="flex items-center gap-[2px] text-white font-['Roobert'] font-bold text-xl tracking-[-0.01em]">
+          <Link 
+            to="/" 
+            className={`flex items-center gap-[2px] font-['Roobert'] font-bold text-xl tracking-[-0.01em] ${
+              isAboutPage ? 'text-[#063322]' : 'text-white'
+            }`}
+          >
             <svg 
-              className="w-5 h-5 text-white flex-shrink-0" 
+              className="w-5 h-5 flex-shrink-0" 
               viewBox="0 0 24 24" 
               fill="none" 
               stroke="currentColor" 
@@ -50,30 +75,69 @@ export default function Navbar() {
               {/* Inner T vertical divider */}
               <path d="M12 3v12" />
             </svg>
-            <span className="text-white font-bold text-xl tracking-tight font-['Roobert']">
+            <span className="font-bold text-xl tracking-tight font-['Roobert']">
               Taxwire
             </span>
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-[14px] translate-y-[2px]">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link}
-                to={`/#${link.toLowerCase()}`}
-                className="text-white font-['Roobert_TRIAL_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 hover:text-white/70"
-              >
-                {link}
-              </Link>
-            ))}
+          <nav className="hidden lg:flex items-center gap-[14px] translate-y-[2px] h-full">
+            {NAV_LINKS.map((link) => {
+              if (link === 'PLATFORM') {
+                return (
+                  <div key={link} className="relative group flex items-center h-full cursor-pointer py-4">
+                    <span
+                      className={`font-['Roobert_TRIAL_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 ${
+                        isAboutPage 
+                          ? 'text-[#063322] group-hover:text-[#063322]/70' 
+                          : 'text-white group-hover:text-white/70'
+                      }`}
+                    >
+                      {link}
+                    </span>
+                    
+                    {/* Hover Dropdown Menu */}
+                    <div className="absolute left-0 top-[calc(100%-8px)] hidden group-hover:flex flex-col gap-1.5 w-[200px] bg-white rounded-xl shadow-xl border border-black/[0.06] p-3 z-50 text-left">
+                      
+                      <Link 
+                        to="/about" 
+                        className="font-sans text-[12px] font-medium leading-[14px] text-[#063322] hover:text-[#11734b] uppercase tracking-[0.06em] transition-colors duration-150 px-2 py-1 rounded hover:bg-black/[0.03]"
+                      >
+                        About
+                      </Link>
+                      <Link 
+                        to="/case-study" 
+                        className="font-sans text-[12px] font-medium leading-[14px] text-[#063322] hover:text-[#11734b] uppercase tracking-[0.06em] transition-colors duration-150 px-2 py-1 rounded hover:bg-black/[0.03]"
+                      >
+                        Case Study
+                      </Link>
+                    </div>
+                  </div>
+                );
+              }
+
+              return (
+                <Link
+                  key={link}
+                  to={`/#${link.toLowerCase()}`}
+                  className={`font-['Roobert_TRIAL_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 ${
+                    isAboutPage 
+                      ? 'text-[#063322] hover:text-[#063322]/70' 
+                      : 'text-white hover:text-white/70'
+                  }`}
+                >
+                  {link}
+                </Link>
+              );
+            })}
           </nav>
         </div>
 
         {/* Right Side: Log In & Request Demo Actions */}
         <div className="hidden lg:flex items-center gap-2">
-          <Button variant="secondary" showIcon={true}>
+          <Button variant={isAboutPage ? 'about' : 'secondary'} showIcon={true}>
             LOG IN
           </Button>
-          <Button variant="primary" showIcon={true}>
+          <Button variant={isAboutPage ? 'about' : 'primary'} showIcon={true}>
             REQUEST DEMO
           </Button>
         </div>
@@ -82,23 +146,37 @@ export default function Navbar() {
         <div className="flex lg:hidden relative z-20">
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="flex items-center justify-center w-10 h-[38px] bg-white/[0.08] border border-white/[0.12] rounded-none text-white cursor-pointer transition-all duration-200 hover:bg-white/[0.15] hover:border-white/[0.25]"
+            className={`flex items-center justify-center w-10 h-[38px] rounded-none cursor-pointer transition-all duration-200 ${
+              isAboutPage 
+                ? 'bg-[#063322]/[0.08] border border-[#063322]/[0.12] text-[#063322] hover:bg-[#063322]/[0.15]' 
+                : 'bg-white/[0.08] border border-white/[0.12] text-white hover:bg-white/[0.15]'
+            }`}
             aria-label="Open menu"
           >
-            <Menu className="w-5 h-5 text-white" />
+            <Menu className="w-5 h-5" />
           </button>
         </div>
       </div>
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="absolute top-0 left-0 right-0 bg-[#053321] z-50 flex flex-col pb-6">
+        <div className={`absolute top-0 left-0 right-0 z-50 flex flex-col pb-6 transition-all duration-300 ${
+          isAboutPage 
+            ? 'bg-white text-[#063322] border-b border-black/[0.08]' 
+            : 'bg-[#053321] text-white'
+        }`}>
           {/* Header row inside drawer */}
           <div className="w-full h-16 px-6 flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-[2px] text-white font-['Roobert'] font-bold text-xl tracking-[-0.01em]" onClick={() => setMobileMenuOpen(false)}>
+            <Link 
+              to="/" 
+              className={`flex items-center gap-[2px] font-['Roobert'] font-bold text-xl tracking-[-0.01em] ${
+                isAboutPage ? 'text-[#063322]' : 'text-white'
+              }`}
+              onClick={() => setMobileMenuOpen(false)}
+            >
               <svg 
-                className="w-5 h-5 text-white flex-shrink-0" 
+                className="w-5 h-5 flex-shrink-0" 
                 viewBox="0 0 24 24" 
                 fill="none" 
                 stroke="currentColor" 
@@ -106,53 +184,75 @@ export default function Navbar() {
                 strokeLinecap="round" 
                 strokeLinejoin="round"
               >
-                {/* Shield outer boundary */}
                 <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-                {/* Inner U element */}
                 <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-                {/* Inner T vertical divider */}
                 <path d="M12 3v12" />
               </svg>
-              <span className="text-white font-bold text-xl tracking-tight font-['Roobert']">
+              <span className="font-bold text-xl tracking-tight font-['Roobert']">
                 Taxwire
               </span>
             </Link>
             {/* Close Button */}
             <button
               onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center w-10 h-10 bg-white/[0.08] text-white cursor-pointer transition-all duration-200 hover:bg-white/[0.12]"
+              className={`flex items-center justify-center w-10 h-10 rounded-none cursor-pointer transition-all duration-200 ${
+                isAboutPage 
+                  ? 'bg-[#063322]/[0.08] text-[#063322] hover:bg-[#063322]/[0.12]' 
+                  : 'bg-white/[0.08] text-white hover:bg-white/[0.12]'
+              }`}
               aria-label="Close menu"
             >
-              <X className="w-5 h-5 text-white" />
+              <X className="w-5 h-5" />
             </button>
           </div>
 
           {/* Drawer content area */}
           <div className="flex flex-col px-6 pt-5">
             <nav className="flex flex-col gap-6 mb-8">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link}
-                  to={`/#${link.toLowerCase()}`}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-white font-['Roobert_TRIAL_Medium'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] transition-colors duration-200 hover:text-white/70 w-max"
-                >
-                  {link}
-                </Link>
-              ))}
+              {NAV_LINKS.map((link) => {
+                if (link === 'PLATFORM') {
+                  return (
+                    <div key={link} className="flex flex-col gap-3">
+                      <span className={`font-['Roobert_TRIAL_Medium'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] ${
+                        isAboutPage ? 'text-[#063322]' : 'text-white'
+                      }`}>
+                        PLATFORM
+                      </span>
+                      <div className="flex flex-col gap-2.5 pl-4 border-l border-current/10 text-left">
+                        <Link to="/about" onClick={() => setMobileMenuOpen(false)} className="text-xs uppercase tracking-wider opacity-85">About</Link>
+                        <Link to="/case-study" onClick={() => setMobileMenuOpen(false)} className="text-xs uppercase tracking-wider opacity-85">Case Study</Link>
+                      </div>
+                    </div>
+                  );
+                }
+                return (
+                  <Link
+                    key={link}
+                    to={`/#${link.toLowerCase()}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={`font-['Roobert_TRIAL_Medium'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] transition-colors duration-200 w-max ${
+                      isAboutPage 
+                        ? 'text-[#063322] hover:text-[#063322]/70' 
+                        : 'text-white hover:text-white/70'
+                    }`}
+                  >
+                    {link}
+                  </Link>
+                );
+              })}
             </nav>
 
             {/* Buttons row at the bottom */}
             <div className="flex flex-row gap-3 w-full">
               <Button 
-                variant="secondary" 
+                variant={isAboutPage ? 'about' : 'secondary'} 
                 showIcon={true} 
                 onClick={() => setMobileMenuOpen(false)}
               >
                 LOG IN
               </Button>
               <Button 
-                variant="primary" 
+                variant={isAboutPage ? 'about' : 'primary'} 
                 showIcon={true} 
                 onClick={() => setMobileMenuOpen(false)}
               >

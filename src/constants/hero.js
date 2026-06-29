@@ -36,3 +36,9 @@ export const TRUSTED_COMPANIES = [
   { name: 'capacity', fontClass: "font-normal text-lg tracking-tight font-['Roobert']" },
   { name: 'FITBOD', fontClass: "font-black text-lg italic tracking-wider" }
 ];
+
+export const HERO_TEXT = {
+  title: "Global sales tax solved",
+  subtitle: "We automate global sales tax compliance,\nsaving finance teams time and money.",
+  buttonText: "REQUEST DEMO"
+};

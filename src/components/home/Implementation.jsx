@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { IMPLEMENTATION_TEXT, IMPLEMENTATION_STAGES, IMPLEMENTATION_CARDS } from '../../constants/implementation';
 
 export default function Implementation() {
   const [activeStep, setActiveStep] = useState(0);
@@ -11,44 +12,8 @@ export default function Implementation() {
     return () => clearInterval(interval);
   }, []);
 
-  const stages = [
-    { label: "DAY 1", activeAt: 0 },
-    { label: "WEEK 1", activeAt: 1 },
-    { label: "WEEK 4", activeAt: 2 }
-  ];
-
-  const cards = [
-    {
-      activeAt: 0,
-      badge: "DAY 1",
-      items: [
-        "Sync historical transactions from your billing, ERP, and accounting systems",
-        "Receive a global tax exposure report",
-        "Review historical compliance, back-filings, and migrations",
-        "Kick off automated registration and filing"
-      ]
-    },
-    {
-      activeAt: 1,
-      badge: "WEEK 1",
-      items: [
-        "Collect tax using no-code integrations and API",
-        "Upload and validate exemption certificates",
-        "Associate products with categories and other tax attributes",
-        "Configure filing schedules and jurisdiction rules"
-      ]
-    },
-    {
-      activeAt: 2,
-      badge: "WEEK 4",
-      items: [
-        "Receive labeled, triage state mail and notices in your virtual mailbox",
-        "Monitor and receive alerts from new nexus thresholds and data issues",
-        "Review filings with reconciliation assistance",
-        "Get support from tax experts, right in Slack"
-      ]
-    }
-  ];
+  const stages = IMPLEMENTATION_STAGES;
+  const cards = IMPLEMENTATION_CARDS;
 
   // Minimalist checkmark icon
   const CheckIcon = ({ isActive }) => (
@@ -98,7 +63,7 @@ export default function Implementation() {
                 letterSpacing: '0.08em'
               }}
             >
-              IMPLEMENTATION
+              {IMPLEMENTATION_TEXT.eyebrow}
             </span>
             <h2
               className="text-[28px] sm:text-4xl md:text-[40px] leading-[34px] sm:leading-[40px] mb-4 text-[#063322]"
@@ -108,7 +73,7 @@ export default function Implementation() {
                 letterSpacing: '-0.02em'
               }}
             >
-              Go live in weeks, not months
+              {IMPLEMENTATION_TEXT.heading}
             </h2>
             <p
               style={{
@@ -119,7 +84,12 @@ export default function Implementation() {
                 lineHeight: '20px'
               }}
             >
-              From system connections to compliance configuration – you can start automating filings and reducing <br className="hidden md:inline" />exposure &lt;24 hours.
+              {IMPLEMENTATION_TEXT.description.split('\n').map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx === 0 && <br className="hidden md:inline" />}
+                </React.Fragment>
+              ))}
             </p>
           </div>
 

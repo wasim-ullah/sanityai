@@ -1,5 +1,6 @@
 import React from 'react';
 import set1Image from '../../assets/images/set1.png';
+import { MONITORING_TEXT } from '../../constants/monitoring';
 
 export default function Monitoring() {
   return (
@@ -44,7 +45,7 @@ export default function Monitoring() {
                 }}
                 className="uppercase font-medium"
               >
-                MONITORING & ALERTING
+                {MONITORING_TEXT.eyebrow}
               </span>
             </div>
 
@@ -60,7 +61,7 @@ export default function Monitoring() {
                 letterSpacing: '-0.02em'
               }}
             >
-              Unified tax notice inbox
+              {MONITORING_TEXT.heading}
             </h2>
 
             {/* Description */}
@@ -74,7 +75,7 @@ export default function Monitoring() {
                 lineHeight: '22px'
               }}
             >
-              Receive a unified virtual inbox of state tax notices and nexus alerts, with automatic triaging, labeling, and expert review.
+              {MONITORING_TEXT.description}
             </p>
 
             {/* Action button */}
@@ -87,7 +88,7 @@ export default function Monitoring() {
                 lineHeight: '14px'
               }}
             >
-              <span>REQUEST DEMO</span>
+              <span>{MONITORING_TEXT.buttonText}</span>
               <svg 
                 className="w-3 h-3 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
                 viewBox="0 0 24 24" 

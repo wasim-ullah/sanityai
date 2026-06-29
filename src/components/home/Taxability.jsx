@@ -1,5 +1,6 @@
 import React from 'react';
 import set2Image from '../../assets/images/set2.png';
+import { TAXABILITY_TEXT } from '../../constants/taxability';
 
 export default function Taxability() {
   return (
@@ -43,7 +44,7 @@ export default function Taxability() {
                 }}
                 className="uppercase font-medium"
               >
-                TAXABILITY MAPPING
+                {TAXABILITY_TEXT.eyebrow}
               </span>
             </div>
 
@@ -59,7 +60,7 @@ export default function Taxability() {
                 letterSpacing: '-0.02em'
               }}
             >
-              Assistive product labeling
+              {TAXABILITY_TEXT.heading}
             </h2>
 
             {/* Description */}
@@ -73,7 +74,7 @@ export default function Taxability() {
                 lineHeight: '22px'
               }}
             >
-              Automatically map products to the correct tax rules. Taxwire handles taxability, exemptions, and edge cases so every item is coded accurately across all your jurisdictions.
+              {TAXABILITY_TEXT.description}
             </p>
 
             {/* Action button */}
@@ -86,7 +87,7 @@ export default function Taxability() {
                 lineHeight: '14px'
               }}
             >
-              <span>REQUEST DEMO</span>
+              <span>{TAXABILITY_TEXT.buttonText}</span>
               <svg 
                 className="w-3 h-3 shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" 
                 viewBox="0 0 24 24" 

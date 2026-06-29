@@ -1,7 +1,7 @@
 import React from 'react';
 import WorldMap from './WorldMap';
 import Button from '../common/Button';
-import { WIDGET_BAR_CHART_HEIGHTS, WIDGET_ACTIVITIES, TRUSTED_COMPANIES } from '../../constants/hero';
+import { WIDGET_BAR_CHART_HEIGHTS, WIDGET_ACTIVITIES, TRUSTED_COMPANIES, HERO_TEXT } from '../../constants/hero';
 
 export default function Hero() {
   return (
@@ -38,7 +38,7 @@ export default function Hero() {
             fontWeight: 300
           }}
         >
-          Global sales tax solved
+          {HERO_TEXT.title}
         </h1>
 
         {/* Subheading */}
@@ -49,13 +49,18 @@ export default function Hero() {
             fontWeight: 400
           }}
         >
-          We automate global sales tax compliance,<br className="hidden sm:inline" /> saving finance teams time and money.
+          {HERO_TEXT.subtitle.split('\n').map((line, idx) => (
+            <React.Fragment key={idx}>
+              {line}
+              {idx === 0 && <br className="hidden sm:inline" />}
+            </React.Fragment>
+          ))}
         </p>
 
         {/* Call-to-action (Request Demo ONLY) */}
         <div className="flex justify-center">
           <Button variant="primary" showIcon={true}>
-            REQUEST DEMO
+            {HERO_TEXT.buttonText}
           </Button>
         </div>
 

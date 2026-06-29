@@ -22,3 +22,28 @@ export const FILE_MOCKUP_SUBMISSIONS = [
   { state: 'New York', status: 'Filed', color: 'text-[#2cff8e] bg-[#2cff8e]/10 border-[#2cff8e]/20' },
   { state: 'Texas', status: 'Pending data', color: 'text-white/30 bg-white/[0.02] border-white/5' }
 ];
+
+export const FEATURES_TEXT = {
+  eyebrow: "Why Taxwire?",
+  heading: "Built to protect\nyou from risk",
+  description: "Hundreds of big and small tasks go into getting and staying\ncompliant. From understanding tax exposure to automating\nfilings and government mail. We do them all."
+};
+
+export const FEATURES_TABS = [
+  {
+    title: 'Understand.',
+    description: "Free nexus study, taxability research, and compliance audit in every jurisdiction you have sales, offices, locations, or employees."
+  },
+  {
+    title: 'Register.',
+    description: "Registrations + back-filings in each state. Future registrations are one click."
+  },
+  {
+    title: 'Calculate.',
+    description: "Rooftop-accurate across jurisdictions, products, exemptions, and edge cases."
+  },
+  {
+    title: 'File and pay.',
+    description: "Autofile your monthly and quarterly tax returns in each jurisdiction."
+  }
+];

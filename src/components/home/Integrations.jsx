@@ -1,5 +1,6 @@
 import React from 'react';
 import integrationImage from '../../assets/images/integration.png';
+import { INTEGRATIONS_TEXT } from '../../constants/integrations';
 
 export default function Integrations() {
   return (
@@ -34,7 +35,7 @@ export default function Integrations() {
                 letterSpacing: '0.08em'
               }}
             >
-              WHY TAXWIRE?
+              {INTEGRATIONS_TEXT.eyebrow}
             </span>
             <h2
               className="text-[var(--color-text-primary-dark)] mb-4"
@@ -47,7 +48,12 @@ export default function Integrations() {
                 letterSpacing: '-0.02em'
               }}
             >
-              Integrate across your billing,<br />commerce, and accounting stack.
+              {INTEGRATIONS_TEXT.heading.split('\n').map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx < 2 && <br />}
+                </React.Fragment>
+              ))}
             </h2>
             <p
               style={{
@@ -58,7 +64,12 @@ export default function Integrations() {
                 lineHeight: '22px'
               }}
             >
-              Have a custom billing or commerce setup? Use our API to<br />implement tax calculation.
+              {INTEGRATIONS_TEXT.description.split('\n').map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx === 0 && <br />}
+                </React.Fragment>
+              ))}
             </p>
           </div>
           
@@ -72,86 +83,38 @@ export default function Integrations() {
           {/* 3 Columns sub-layout */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-2 w-full">
             
-            {/* Billing */}
-            <div className="w-full max-w-[342px] h-[240px] p-6 bg-[#fafafa] border border-black/5 rounded-none flex flex-col justify-center items-center text-center shadow-lg">
-              <h3 
-                className="mb-3"
-                style={{
-                  fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
-                  fontWeight: 500,
-                  color: 'rgb(6, 51, 34)',
-                  fontSize: '18px',
-                  lineHeight: '22px'
-                }}
-              >
-                Billing
-              </h3>
-              <p
-                style={{
-                  fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
-                  fontWeight: 400,
-                  color: 'rgb(102, 102, 102)',
-                  fontSize: '14px',
-                  lineHeight: '20px'
-                }}
-              >
-                Calculate real-time, accurate tax rates at<br />invoice - across all billing systems.
-              </p>
-            </div>
-
-            {/* Commerce */}
-            <div className="w-full max-w-[342px] h-[240px] p-6 bg-[#fafafa] border border-black/5 rounded-none flex flex-col justify-center items-center text-center shadow-lg">
-              <h3 
-                className="mb-3"
-                style={{
-                  fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
-                  fontWeight: 500,
-                  color: 'rgb(6, 51, 34)',
-                  fontSize: '18px',
-                  lineHeight: '22px'
-                }}
-              >
-                Commerce
-              </h3>
-              <p
-                style={{
-                  fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
-                  fontWeight: 400,
-                  color: 'rgb(102, 102, 102)',
-                  fontSize: '14px',
-                  lineHeight: '20px'
-                }}
-              >
-                Collect the right sales tax amount at<br />checkout across all products and channels.
-              </p>
-            </div>
-
-            {/* Accounting */}
-            <div className="w-full max-w-[342px] h-[240px] p-6 bg-[#fafafa] border border-black/5 rounded-none flex flex-col justify-center items-center text-center shadow-lg">
-              <h3 
-                className="mb-3"
-                style={{
-                  fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
-                  fontWeight: 500,
-                  color: 'rgb(6, 51, 34)',
-                  fontSize: '18px',
-                  lineHeight: '22px'
-                }}
-              >
-                Accounting
-              </h3>
-              <p
-                style={{
-                  fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
-                  fontWeight: 400,
-                  color: 'rgb(102, 102, 102)',
-                  fontSize: '14px',
-                  lineHeight: '20px'
-                }}
-              >
-                Calculate tax natively on invoices in<br />Quickbooks, Xero, Netsuite, and more.
-              </p>
-            </div>
+            {INTEGRATIONS_TEXT.cards.map((card, idx) => (
+              <div key={idx} className="w-full max-w-[342px] h-[240px] p-6 bg-[#fafafa] border border-black/5 rounded-none flex flex-col justify-center items-center text-center shadow-lg">
+                <h3 
+                  className="mb-3"
+                  style={{
+                    fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                    fontWeight: 500,
+                    color: 'rgb(6, 51, 34)',
+                    fontSize: '18px',
+                    lineHeight: '22px'
+                  }}
+                >
+                  {card.title}
+                </h3>
+                <p
+                  style={{
+                    fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                    fontWeight: 400,
+                    color: 'rgb(102, 102, 102)',
+                    fontSize: '14px',
+                    lineHeight: '20px'
+                  }}
+                >
+                  {card.description.split('\n').map((line, lIdx) => (
+                    <React.Fragment key={lIdx}>
+                      {line}
+                      {lIdx === 0 && <br />}
+                    </React.Fragment>
+                  ))}
+                </p>
+              </div>
+            ))}
 
           </div>
           

@@ -1,54 +1,17 @@
 import React from 'react';
 import { CustomBulbIcon, CustomStampIcon, CustomCalculatorIcon, CustomFileIcon } from '../icons';
 import { UnderstandMockup, RegisterMockup, CalculateMockup, FileMockup } from './mockups';
+import { FEATURES_TEXT, FEATURES_TABS } from '../../constants/features';
 
 export default function Features() {
   const [activeTab, setActiveTab] = React.useState(0);
   const [hoveredTab, setHoveredTab] = React.useState(null);
 
-  const tabs = [
-    {
-      title: 'Understand.',
-      description: (
-        <>
-          Free nexus study, taxability research, and<br />
-          compliance audit in every jurisdiction you<br />
-          have sales, offices, locations, or employees.
-        </>
-      ),
-      icon: CustomBulbIcon
-    },
-    {
-      title: 'Register.',
-      description: (
-        <>
-          Registrations + back-filings in each state.<br />
-          Future registrations are one click.
-        </>
-      ),
-      icon: CustomStampIcon
-    },
-    {
-      title: 'Calculate.',
-      description: (
-        <>
-          Rooftop-accurate across jurisdictions,<br />
-          products, exemptions, and edge cases.
-        </>
-      ),
-      icon: CustomCalculatorIcon
-    },
-    {
-      title: 'File and pay.',
-      description: (
-        <>
-          Autofile your monthly and quarterly tax<br />
-          returns in each jurisdiction.
-        </>
-      ),
-      icon: CustomFileIcon
-    }
-  ];
+  const tabIcons = [CustomBulbIcon, CustomStampIcon, CustomCalculatorIcon, CustomFileIcon];
+  const tabs = FEATURES_TABS.map((tab, idx) => ({
+    ...tab,
+    icon: tabIcons[idx]
+  }));
 
   return (
     <section className="relative w-full bg-white overflow-hidden flex flex-col items-center">
@@ -78,7 +41,7 @@ export default function Features() {
                 lineHeight: '17px'
               }}
             >
-              Why Taxwire?
+              {FEATURES_TEXT.eyebrow}
             </span>
             <h2
               className="text-[var(--color-text-primary-dark)]"
@@ -90,7 +53,12 @@ export default function Features() {
                 lineHeight: '40px'
               }}
             >
-              Built to protect<br />you from risk
+              {FEATURES_TEXT.heading.split('\n').map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx === 0 && <br />}
+                </React.Fragment>
+              ))}
             </h2>
           </div>
           <div className="max-w-md">
@@ -103,9 +71,12 @@ export default function Features() {
                 lineHeight: '20px'
               }}
             >
-              Hundreds of big and small tasks go into getting and staying<br />
-              compliant. From understanding tax exposure to automating<br />
-              filings and government mail. We do them all.
+              {FEATURES_TEXT.description.split('\n').map((line, idx) => (
+                <React.Fragment key={idx}>
+                  {line}
+                  {idx < 2 && <br />}
+                </React.Fragment>
+              ))}
             </p>
           </div>
         </div>
