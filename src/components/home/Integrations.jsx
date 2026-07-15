@@ -27,7 +27,7 @@ export default function Integrations() {
             <span
               className="block mb-4 uppercase"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(0, 0, 0)',
                 fontSize: '12px',
@@ -40,9 +40,9 @@ export default function Integrations() {
             <h2
               className="text-[var(--color-text-primary-dark)] mb-4"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
-                color: 'rgb(6, 51, 34)',
+                color: 'rgb(15, 15, 15)',
                 fontSize: '40px',
                 lineHeight: '40px',
                 letterSpacing: '-0.02em'
@@ -57,7 +57,7 @@ export default function Integrations() {
             </h2>
             <p
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(102, 102, 102)',
                 fontSize: '16px',
@@ -88,9 +88,9 @@ export default function Integrations() {
                 <h3 
                   className="mb-3"
                   style={{
-                    fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                     fontWeight: 500,
-                    color: 'rgb(6, 51, 34)',
+                    color: 'rgb(15, 15, 15)',
                     fontSize: '18px',
                     lineHeight: '22px'
                   }}
@@ -99,7 +99,7 @@ export default function Integrations() {
                 </h3>
                 <p
                   style={{
-                    fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                     fontWeight: 400,
                     color: 'rgb(102, 102, 102)',
                     fontSize: '14px',

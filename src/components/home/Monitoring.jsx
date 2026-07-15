@@ -29,14 +29,14 @@ export default function Monitoring() {
             
             {/* Eyebrow header with small green circular icon */}
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-5 h-5 rounded-full bg-[#11734b]/10 border border-[#11734b]/20 flex items-center justify-center text-[#11734b] shrink-0">
+              <div className="w-5 h-5 rounded-full bg-[#454545]/10 border border-[#454545]/20 flex items-center justify-center text-[#454545] shrink-0">
                 <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
                 </svg>
               </div>
               <span 
                 style={{
-                  fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                   fontWeight: 400,
                   color: 'rgb(0, 0, 0)',
                   fontSize: '12px',
@@ -53,9 +53,9 @@ export default function Monitoring() {
             <h2
               className="text-[var(--color-text-primary-dark)] mb-6"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
-                color: 'rgb(6, 51, 34)',
+                color: 'rgb(15, 15, 15)',
                 fontSize: '32px',
                 lineHeight: '35px',
                 letterSpacing: '-0.02em'
@@ -68,7 +68,7 @@ export default function Monitoring() {
             <p
               className="mb-8 max-w-md"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(102, 102, 102)',
                 fontSize: '16px',
@@ -80,9 +80,9 @@ export default function Monitoring() {
 
             {/* Action button */}
             <button 
-              className="group inline-flex items-center gap-2 bg-[#073322] hover:bg-[#2eb87e] text-white hover:text-[#073322] border border-[#073322] hover:border-[#2eb87e] uppercase tracking-[0.08em] px-5 py-2.5 transition-all duration-200 w-max"
+              className="group inline-flex items-center gap-2 bg-[#111111] hover:bg-[#d1d1d1] text-white hover:text-[#111111] border border-[#111111] hover:border-[#d1d1d1] uppercase tracking-[0.08em] px-5 py-2.5 transition-all duration-200 w-max"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
                 fontSize: '12px',
                 lineHeight: '14px'

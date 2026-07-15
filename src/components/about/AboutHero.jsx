@@ -9,7 +9,7 @@ export default function AboutHero() {
         {/* Eyebrow */}
         <span 
           style={{
-            fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
             fontWeight: 400,
             color: 'rgb(0, 0, 0)',
             fontSize: '12px',
@@ -24,18 +24,18 @@ export default function AboutHero() {
         {/* Heading */}
         <h1 
           style={{
-            fontFamily: '"Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
             fontWeight: 300,
-            color: 'rgb(5, 51, 33)',
+            color: 'rgb(15, 15, 15)',
           }}
           className="tracking-tight mb-8 text-center text-3xl sm:text-5xl md:text-[64px] leading-tight md:leading-[64px] max-w-4xl"
         >
           <span className="hidden md:block">
             {ABOUT_HERO.titleLine1}<br />
-            {ABOUT_HERO.titleLine2}
+            <span className="stress">modern</span> business.
           </span>
           <span className="block md:hidden">
-            {ABOUT_HERO.titleLine1} {ABOUT_HERO.titleLine2}
+            {ABOUT_HERO.titleLine1} <span className="stress">modern</span> business.
           </span>
         </h1>
 

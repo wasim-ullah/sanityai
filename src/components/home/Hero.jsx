@@ -27,25 +27,25 @@ export default function Hero() {
       </div>
 
       {/* Radial green glow behind map */}
-      <div className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(circle_at_center,rgba(46,184,126,0.08)_0%,transparent_70%)] pointer-events-none z-0"></div>
+      <div className="absolute bottom-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[radial-gradient(circle_at_center,rgba(209,209,209,0.08)_0%,transparent_70%)] pointer-events-none z-0"></div>
 
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px] flex flex-col items-center">
         {/* Heading */}
         <h1
           className="text-white text-4xl sm:text-5xl md:text-[64px] tracking-tight leading-[1.0] md:leading-[64px] mb-4 max-w-4xl text-center"
           style={{
-            fontFamily: '"Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
             fontWeight: 300
           }}
         >
-          {HERO_TEXT.title}
+          Global sales tax <span className="stress">solved</span>
         </h1>
 
         {/* Subheading */}
         <p
           className="text-white text-sm sm:text-base md:text-[16px] leading-[19px] max-w-xl mb-6 text-center"
           style={{
-            fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
             fontWeight: 400
           }}
         >
@@ -66,33 +66,33 @@ export default function Hero() {
 
         {/* Unified Dashboard Mockup Box */}
         <div
-          className="relative w-full max-w-[1080px] aspect-[1080/576] bg-[rgba(3,29,19,0.25)] border-[0.09cqw] border-white/5 rounded-[0.37cqw] flex flex-row z-10 shadow-2xl mt-8 mb-6 overflow-hidden"
+          className="relative w-full max-w-[1080px] aspect-[1080/576] bg-[rgba(10,10,10,0.25)] border-[0.09cqw] border-white/5 rounded-[0.37cqw] flex flex-row z-10 shadow-2xl mt-8 mb-6 overflow-hidden"
           style={{ containerType: 'inline-size' }}
         >
 
           {/* Left Panel */}
           <div className="flex flex-col justify-between p-[1.11cqw] w-[24%] shrink-0 h-full gap-[0.74cqw]">
             {/* Widget 1: Overview */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
-                <div className="h-[0.55cqw] bg-[#056240]/40 w-[5.9cqw] rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
+                <div className="h-[0.55cqw] bg-[#333333]/40 w-[5.9cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="h-[5.92cqw] bg-white/[0.01] border border-white/5 w-full flex items-center justify-center rounded-[0.18cqw]">
-                <div className="h-[0.55cqw] bg-[#056240]/20 w-[7.4cqw] rounded-[0.18cqw]"></div>
+                <div className="h-[0.55cqw] bg-[#333333]/20 w-[7.4cqw] rounded-[0.18cqw]"></div>
               </div>
             </div>
 
             {/* Widget 2: Status Indicators */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
-                <div className="h-[0.55cqw] bg-[#056240]/40 w-[5.9cqw] rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
+                <div className="h-[0.55cqw] bg-[#333333]/40 w-[5.9cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="flex flex-col gap-[0.92cqw] pt-[0.18cqw]">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="flex items-center gap-[0.92cqw]">
-                    <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/15 border border-[#2eb87e]/30 rounded-[0.18cqw]"></div>
+                    <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/15 border border-[#d1d1d1]/30 rounded-[0.18cqw]"></div>
                     <div className="h-[0.55cqw] bg-white/[0.03] w-[10.37cqw] rounded-[0.18cqw]"></div>
                   </div>
                 ))}
@@ -100,9 +100,9 @@ export default function Hero() {
             </div>
 
             {/* Widget 3: Control Grid */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
                 <div className="h-[0.55cqw] bg-white/[0.04] w-[7.4cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="grid grid-cols-2 gap-[0.74cqw]">
@@ -115,16 +115,16 @@ export default function Hero() {
             </div>
 
             {/* Widget 4: Bar Chart Card */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
                 <div className="h-[0.55cqw] bg-white/[0.04] w-[8.8cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="h-[4.44cqw] bg-white/[0.01] border border-white/5 w-full flex items-end justify-between px-[1.3cqw] pb-[0.55cqw] pt-[0.37cqw] rounded-[0.18cqw] gap-[0.74cqw]">
                 {WIDGET_BAR_CHART_HEIGHTS.map((heightClass, idx) => (
                   <div
                     key={idx}
-                    className={`${heightClass} bg-[#2eb87e]/30 border border-[#2eb87e]/40 w-full rounded-[0.18cqw] shadow-[0_0_0.55cqw_rgba(46,184,126,0.1)]`}
+                    className={`${heightClass} bg-[#d1d1d1]/30 border border-[#d1d1d1]/40 w-full rounded-[0.18cqw] shadow-[0_0_0.55cqw_rgba(209,209,209,0.1)]`}
                   ></div>
                 ))}
               </div>
@@ -158,9 +158,9 @@ export default function Hero() {
           {/* Right Panel */}
           <div className="flex flex-col justify-between p-[1.11cqw] w-[24%] shrink-0 h-full gap-[0.74cqw]">
             {/* Widget 1: Activities list */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
                 <div className="h-[0.55cqw] bg-white/[0.04] w-[7.4cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="flex flex-col">
@@ -174,15 +174,15 @@ export default function Hero() {
             </div>
 
             {/* Widget 2: Middle Status Indicators */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
                 <div className="h-[0.55cqw] bg-white/[0.04] w-[7.4cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="flex flex-col gap-[0.92cqw] pt-[0.18cqw]">
                 {[1, 2, 3].map((i) => (
                   <div key={i} className="flex items-center gap-[0.92cqw]">
-                    <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/15 border border-[#2eb87e]/30 rounded-[0.18cqw]"></div>
+                    <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/15 border border-[#d1d1d1]/30 rounded-[0.18cqw]"></div>
                     <div className="h-[0.55cqw] bg-white/[0.03] w-[8.8cqw] rounded-[0.18cqw]"></div>
                   </div>
                 ))}
@@ -190,15 +190,15 @@ export default function Hero() {
             </div>
 
             {/* Widget 3: Compliance progress bars */}
-            <div className="bg-[#0c462e]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
+            <div className="bg-[#1c1c1c]/20 border border-white/5 p-[1.11cqw] flex flex-col gap-[0.92cqw] rounded-[0.74cqw] w-full">
               <div className="flex items-center gap-[0.74cqw]">
-                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#2eb87e]/20 border border-[#2eb87e]/40 rounded-[0.18cqw]"></div>
+                <div className="w-[1.3cqw] h-[1.3cqw] bg-[#d1d1d1]/20 border border-[#d1d1d1]/40 rounded-[0.18cqw]"></div>
                 <div className="h-[0.55cqw] bg-white/[0.04] w-[5.9cqw] rounded-[0.18cqw]"></div>
               </div>
               <div className="flex flex-col gap-[0.55cqw] pt-[0.18cqw]">
                 <div className="h-[0.55cqw] bg-white/[0.02] w-[8.8cqw] rounded-[0.18cqw]"></div>
-                <div className="w-full bg-[#053321] h-[1.3cqw] rounded-[0.18cqw] overflow-hidden border-[0.09cqw] border-white/5">
-                  <div className="bg-[#2eb87e] h-full w-[65%] shadow-[0_0_0.74cqw_rgba(46,184,126,0.4)]"></div>
+                <div className="w-full bg-[#0f0f0f] h-[1.3cqw] rounded-[0.18cqw] overflow-hidden border-[0.09cqw] border-white/5">
+                  <div className="bg-[#d1d1d1] h-full w-[65%] shadow-[0_0_0.74cqw_rgba(209,209,209,0.4)]"></div>
                 </div>
               </div>
             </div>
@@ -213,11 +213,11 @@ export default function Hero() {
         {/* Trusted By Logo Wall Section */}
         <div className="w-full max-w-[1080px] z-10">
           <div className="flex items-center mb-6">
-            <span className="w-1.5 h-1.5 bg-[#2eb87e] mr-2.5"></span>
+            <span className="w-1.5 h-1.5 bg-[#d1d1d1] mr-2.5"></span>
             <span
               className="text-white"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '14px',
                 lineHeight: '20px'
@@ -229,7 +229,7 @@ export default function Hero() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
             {TRUSTED_COMPANIES.map((company, index) => (
-              <div key={index} className="bg-[#0f3b2a] border border-white/5 flex items-center justify-center h-[56px]">
+              <div key={index} className="bg-[#191919] border border-white/5 flex items-center justify-center h-[56px]">
                 {company.hasIcon === 'middesk' && (
                   <div className="flex items-center gap-2">
                     <svg className="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="currentColor">
@@ -245,7 +245,7 @@ export default function Hero() {
                     <svg className="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path d="M12 3 L20 11 L12 19 L4 11 Z" />
                     </svg>
-                    <span className="text-white font-bold text-base tracking-wide font-['Roobert']">{company.name}</span>
+                    <span className="text-white font-bold text-base tracking-wide font-['Beausite_Classic_Regular']">{company.name}</span>
                   </div>
                 )}
                 {!company.hasIcon && (

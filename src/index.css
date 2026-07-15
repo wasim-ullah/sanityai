@@ -113,41 +113,42 @@
 :root {
   /* ---------- COLOR PALETTE ---------- */
   /* Primary theme: Deep dark green background with crisp white text */
-  --color-bg-dark: #053321;
+  --color-bg-dark: #0f0f0f;
   /* Deep forest green backdrop */
-  --color-bg-light: #f9faf9;
+  --color-bg-light: #fafafa;
   /* Clean off-white for alternative sections */
 
   /* Text styling */
   --color-text-primary: #ffffff;
   /* White for dark sections */
-  --color-text-primary-dark: #053321;
+  --color-text-primary-dark: #0f0f0f;
   /* Dark green/black for light sections */
   --color-text-muted: rgba(255, 255, 255, 0.7);
   /* Lighter green/gray/white for dark subtitles */
-  --color-text-muted-dark: rgba(5, 51, 33, 0.65);
+  --color-text-muted-dark: rgba(15, 15, 15, 0.65);
   /* Lighter gray/green for light subtitles */
 
   /* Accent greens from the page details */
-  --color-accent-green: #218d64;
+  --color-accent-green: #555555;
   /* Mid-green accent for cards and graphics */
-  --color-accent-green-bright: #2cff8e;
+  --color-accent-green-bright: #ffffff;
   /* Pulsing node signals and hover highlights */
   --color-border-dark: rgba(255, 255, 255, 0.08);
   /* Borders in dark mode */
-  --color-border-light: rgba(5, 51, 33, 0.08);
+  --color-border-light: rgba(15, 15, 15, 0.08);
   /* Borders in light mode */
 
   /* Buttons */
   --color-button-bg: #ffffff;
   /* Pure white button */
-  --color-button-text: #053321;
+  --color-button-text: #0f0f0f;
   /* Dark green button label */
   --color-button-secondary-bg: rgba(255, 255, 255, 0.08);
   --color-button-secondary-border: rgba(255, 255, 255, 0.15);
 
   /* ---------- TYPOGRAPHY ---------- */
-  --font-primary: 'Roobert', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-primary: 'Beausite Classic Regular', 'Roobert', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-serif: 'RomanSerif', 'Times New Roman', Georgia, serif;
   --font-mono: 'Roobert Mono', 'IBM Plex Mono', 'JetBrains Mono', monospace;
 
   /* Font weight utilities */
@@ -232,6 +233,19 @@
     border: none;
     background: none;
   }
+}
+
+/* ============================================================
+   EMPHASIS / STRESSED WORDS
+   Serif accent (RomanSerif) used to stress the occasional word
+   inside otherwise sans-serif headings for editorial contrast.
+   ============================================================ */
+
+.stress {
+  font-family: var(--font-serif);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
 }
 
 /* ============================================================

@@ -29,11 +29,11 @@ export const WIDGET_ACTIVITIES = [
 export const TRUSTED_COMPANIES = [
   { name: 'Middesk', hasIcon: 'middesk' },
   { name: 'Spellbook', hasIcon: 'spellbook' },
-  { name: 'omni', fontClass: "font-medium text-xl tracking-wider font-['Roobert']" },
+  { name: 'omni', fontClass: "font-medium text-xl tracking-wider font-['Beausite_Classic_Regular']" },
   { name: 'unspun', fontClass: "font-bold text-xl tracking-tighter" },
-  { name: 'Pulley', fontClass: "font-semibold text-lg tracking-tight font-['Roobert']" },
+  { name: 'Pulley', fontClass: "font-semibold text-lg tracking-tight font-['Beausite_Classic_Regular']" },
   { name: 'ITALIC', fontClass: "font-extrabold text-base tracking-[0.12em]" },
-  { name: 'capacity', fontClass: "font-normal text-lg tracking-tight font-['Roobert']" },
+  { name: 'capacity', fontClass: "font-normal text-lg tracking-tight font-['Beausite_Classic_Regular']" },
   { name: 'FITBOD', fontClass: "font-black text-lg italic tracking-wider" }
 ];
 

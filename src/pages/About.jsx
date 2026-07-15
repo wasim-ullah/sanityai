@@ -10,7 +10,7 @@ import AboutCta from '../components/about/AboutCta';
 
 export default function About() {
   return (
-    <div className="relative w-full bg-white text-[#063322] min-h-screen pt-20 overflow-hidden flex flex-col items-center">
+    <div className="relative w-full bg-white text-[#0f0f0f] min-h-screen pt-20 overflow-hidden flex flex-col items-center">
       {/* 
         Symmetric Left & Right Grid Guidelines matching the Navbar.
         Only the 2 right-most left lines (128px, 162px) and 2 left-most right lines (128px, 162px) are displayed.

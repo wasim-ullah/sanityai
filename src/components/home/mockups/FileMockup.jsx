@@ -3,7 +3,7 @@ import { FILE_MOCKUP_SUBMISSIONS } from '../../../constants/features';
 
 export default function FileMockup() {
   return (
-    <div className="bg-[#0c462e]/30 backdrop-blur-md border border-white/5 p-5 rounded-sm w-[90%] sm:w-[85%] shadow-2xl flex flex-col gap-4 text-[13px] font-sans">
+    <div className="bg-[#1c1c1c]/30 backdrop-blur-md border border-white/5 p-5 rounded-sm w-[90%] sm:w-[85%] shadow-2xl flex flex-col gap-4 text-[13px] font-sans">
       <div className="flex items-center justify-between pb-3 border-b border-white/5">
         <span className="text-white font-medium text-[15px]">Filing Submissions</span>
         <span className="text-white/40 text-[10px] font-mono">Q2 PERIOD</span>

@@ -19,7 +19,7 @@ export const CALCULATE_MOCKUP_ROWS = [
 
 export const FILE_MOCKUP_SUBMISSIONS = [
   { state: 'California', status: 'Ready to submit', color: 'text-amber-400 bg-amber-400/10 border-amber-400/20' },
-  { state: 'New York', status: 'Filed', color: 'text-[#2cff8e] bg-[#2cff8e]/10 border-[#2cff8e]/20' },
+  { state: 'New York', status: 'Filed', color: 'text-[#ffffff] bg-[#ffffff]/10 border-[#ffffff]/20' },
   { state: 'Texas', status: 'Pending data', color: 'text-white/30 bg-white/[0.02] border-white/5' }
 ];
 

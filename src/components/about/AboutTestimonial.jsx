@@ -3,7 +3,7 @@ import { ABOUT_TESTIMONIAL } from '../../constants/about';
 
 export default function AboutTestimonial() {
   return (
-    <section className="relative z-10 w-full bg-[#053321] text-white overflow-hidden min-h-[340px] py-12 lg:py-0 flex items-center justify-center">
+    <section className="relative z-10 w-full bg-[#0f0f0f] text-white overflow-hidden min-h-[340px] py-12 lg:py-0 flex items-center justify-center">
       {/* Dynamic equal-spaced guidelines on the left side */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden w-full hidden lg:block z-0">
         {/* Guidelines matching white block left lines (128, 162) and extending rightwards at 34px equal intervals */}
@@ -18,7 +18,7 @@ export default function AboutTestimonial() {
         {/* Eyebrow */}
         <span 
           style={{
-            fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
             fontWeight: 400,
             color: 'rgba(255, 255, 255, 0.64)',
             fontSize: '16px',
@@ -32,7 +32,7 @@ export default function AboutTestimonial() {
         {/* Quote Text */}
         <h2
           style={{
-            fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
             fontWeight: 500,
             color: 'rgb(255, 255, 255)',
           }}
@@ -57,7 +57,7 @@ export default function AboutTestimonial() {
           />
           <span 
             style={{
-              fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
               fontWeight: 400,
               color: 'rgba(255, 255, 255, 0.64)',
               fontSize: '16px',

@@ -26,7 +26,7 @@ export default function Testimonials() {
           {/* Eyebrow Header */}
           <span 
             style={{
-              fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
               fontWeight: 400,
               color: 'rgb(0, 0, 0)',
               fontSize: '12px',
@@ -42,9 +42,9 @@ export default function Testimonials() {
           <h2
             className="mb-12"
             style={{
-              fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
               fontWeight: 500,
-              color: 'rgb(6, 51, 34)',
+              color: 'rgb(15, 15, 15)',
               fontSize: '40px',
               lineHeight: '40px',
               letterSpacing: '-0.02em'
@@ -58,12 +58,12 @@ export default function Testimonials() {
             {testimonials.map((t, idx) => (
               <div 
                 key={idx} 
-                className="bg-[#063322] p-4 pb-3 flex flex-col justify-between rounded-none shadow-none w-full max-w-[340px] aspect-[340/480] lg:aspect-auto lg:w-[340px] lg:h-[480px]"
+                className="bg-[#0f0f0f] p-4 pb-3 flex flex-col justify-between rounded-none shadow-none w-full max-w-[340px] aspect-[340/480] lg:aspect-auto lg:w-[340px] lg:h-[480px]"
               >
                 {/* Quote Text */}
                 <p 
                   style={{
-                    fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                     fontWeight: 400,
                     color: 'rgb(255, 255, 255)',
                     fontSize: '18px',
@@ -87,7 +87,7 @@ export default function Testimonials() {
                   <div className="flex flex-col text-left">
                     <span 
                       style={{
-                        fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                        fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                         fontWeight: 400,
                         color: 'rgb(255, 255, 255)',
                         fontSize: '18px',
@@ -98,7 +98,7 @@ export default function Testimonials() {
                     </span>
                     <span 
                       style={{
-                        fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                        fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                         fontWeight: 400,
                         color: 'rgba(255, 255, 255, 0.45)',
                         fontSize: '12px',

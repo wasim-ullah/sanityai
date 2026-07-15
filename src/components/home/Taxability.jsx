@@ -26,7 +26,7 @@ export default function Taxability() {
             
             {/* Eyebrow header with small green circular bag icon */}
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-5 h-5 rounded-full bg-[#11734b]/10 border border-[#11734b]/20 flex items-center justify-center text-[#11734b] shrink-0">
+              <div className="w-5 h-5 rounded-full bg-[#454545]/10 border border-[#454545]/20 flex items-center justify-center text-[#454545] shrink-0">
                 <svg className="w-2.5 h-2.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
                   <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -35,7 +35,7 @@ export default function Taxability() {
               </div>
               <span 
                 style={{
-                  fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                   fontWeight: 400,
                   color: 'rgb(0, 0, 0)',
                   fontSize: '12px',
@@ -52,9 +52,9 @@ export default function Taxability() {
             <h2
               className="text-[var(--color-text-primary-dark)] mb-6"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
-                color: 'rgb(6, 51, 34)',
+                color: 'rgb(15, 15, 15)',
                 fontSize: '32px',
                 lineHeight: '35px',
                 letterSpacing: '-0.02em'
@@ -67,7 +67,7 @@ export default function Taxability() {
             <p
               className="mb-8 max-w-md"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(102, 102, 102)',
                 fontSize: '16px',
@@ -79,9 +79,9 @@ export default function Taxability() {
 
             {/* Action button */}
             <button 
-              className="group inline-flex items-center gap-2 bg-[#073322] hover:bg-[#2eb87e] text-white hover:text-[#073322] border border-[#073322] hover:border-[#2eb87e] uppercase tracking-[0.08em] px-5 py-2.5 transition-all duration-200 w-max"
+              className="group inline-flex items-center gap-2 bg-[#111111] hover:bg-[#d1d1d1] text-white hover:text-[#111111] border border-[#111111] hover:border-[#d1d1d1] uppercase tracking-[0.08em] px-5 py-2.5 transition-all duration-200 w-max"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
                 fontSize: '12px',
                 lineHeight: '14px'

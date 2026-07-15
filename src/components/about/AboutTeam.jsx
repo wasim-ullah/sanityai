@@ -9,7 +9,7 @@ export default function AboutTeam() {
         <div className="lg:col-span-5 text-left flex flex-col items-start">
           <span 
             style={{
-              fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
               fontWeight: 400,
               color: 'rgb(0, 0, 0)',
               fontSize: '12px',
@@ -23,9 +23,9 @@ export default function AboutTeam() {
           
           <h2 
             style={{
-              fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
               fontWeight: 500,
-              color: 'rgb(6, 51, 34)',
+              color: 'rgb(15, 15, 15)',
               fontSize: '40px',
               lineHeight: '40px'
             }}
@@ -37,7 +37,7 @@ export default function AboutTeam() {
           <div className="max-w-md flex flex-col">
             <p
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(0, 0, 0)',
                 fontSize: '16px',
@@ -48,7 +48,7 @@ export default function AboutTeam() {
             </p>
             <p
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(0, 0, 0)',
                 fontSize: '16px',
@@ -75,9 +75,9 @@ export default function AboutTeam() {
                 </div>
                 <h3 
                   style={{
-                    fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                     fontWeight: 500,
-                    color: '#11734b',
+                    color: '#454545',
                     fontSize: '16px',
                     lineHeight: '20px'
                   }}
@@ -87,7 +87,7 @@ export default function AboutTeam() {
                 </h3>
                 <span 
                   style={{
-                    fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                     fontWeight: 400,
                     color: 'rgba(0, 0, 0, 0.64)',
                     fontSize: '12px',

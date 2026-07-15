@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
+import Logo from './Logo';
 
 export default function Footer() {
   const location = useLocation();
@@ -37,7 +38,7 @@ export default function Footer() {
               <h2
                 className="tracking-tight text-[28px] leading-[32px] sm:text-[34px] sm:leading-[38px] lg:text-[40px] lg:leading-[40px]"
                 style={{
-                  fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                   fontWeight: 500,
                   color: 'rgb(255, 255, 255)'
                 }}
@@ -50,7 +51,7 @@ export default function Footer() {
               <p
                 className="text-[14px] leading-[18px] sm:text-[16px] sm:leading-[20px] lg:text-[18px] lg:leading-[22px]"
                 style={{
-                  fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                   fontWeight: 400,
                   color: 'rgb(255, 255, 255)'
                 }}
@@ -77,22 +78,17 @@ export default function Footer() {
 
             {/* Logo + Copyright + SOC2 — centered */}
             <div className="flex flex-col items-center text-center gap-3">
-              <Link to="/" className="flex items-center gap-[2px] text-white font-['Roobert'] font-bold text-xl tracking-[-0.01em]">
-                <svg className="w-5 h-5 text-white flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-                  <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-                  <path d="M12 3v12" />
-                </svg>
-                <span>Taxwire</span>
+              <Link to="/" aria-label="SanityAI home" className="text-white">
+                <Logo className="h-5 w-auto" />
               </Link>
-              <span style={{ fontFamily: 'sans-serif', fontWeight: 400, color: 'rgba(255,255,255,0.47)', fontSize: '16px' }}>
-                Taxwire © 2026
+              <span style={{ fontFamily: '"Beausite Classic Regular", sans-serif', fontWeight: 400, color: 'rgba(255,255,255,0.47)', fontSize: '16px' }}>
+                SanityAI © 2026
               </span>
               <div className="flex items-center gap-2">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-[7px] font-bold text-white shadow-sm border border-blue-400/20 shrink-0">
                   <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                 </div>
-                <span style={{ fontFamily: 'sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '14px' }}>SOC 2 Type II Certified</span>
+                <span style={{ fontFamily: '"Beausite Classic Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '14px' }}>SOC 2 Type II Certified</span>
               </div>
             </div>
 
@@ -101,25 +97,25 @@ export default function Footer() {
 
               {/* Company */}
               <div className="flex flex-col items-center gap-3">
-                <span style={{ fontFamily: '"Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '11px', lineHeight: '12px', whiteSpace: 'nowrap' }}>COMPANY</span>
-                <Link to="/#careers" style={{ fontFamily: '"Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '15px', lineHeight: '19px', whiteSpace: 'nowrap' }} className="hover:text-white transition-colors text-center">
+                <span style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '11px', lineHeight: '12px', whiteSpace: 'nowrap' }}>COMPANY</span>
+                <Link to="/#careers" style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '15px', lineHeight: '19px', whiteSpace: 'nowrap' }} className="hover:text-white transition-colors text-center">
                   Careers
                 </Link>
               </div>
 
               {/* Socials */}
               <div className="flex flex-col items-center gap-3">
-                <span style={{ fontFamily: '"Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '11px', lineHeight: '12px', whiteSpace: 'nowrap' }}>SOCIALS</span>
+                <span style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '11px', lineHeight: '12px', whiteSpace: 'nowrap' }}>SOCIALS</span>
                 <div className="flex flex-col items-center gap-2.5">
-                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-1.5 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '15px', fontFamily: '"Roobert TRIAL Regular", sans-serif', whiteSpace: 'nowrap' }}>
+                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-1.5 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '15px', fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', whiteSpace: 'nowrap' }}>
                     <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center shrink-0">
-                      <svg className="w-2.5 h-2.5 text-[#2c9a6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                      <svg className="w-2.5 h-2.5 text-[#6b6b6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
                     </div>
                     <span>LinkedIn</span>
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-1.5 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '15px', fontFamily: '"Roobert TRIAL Regular", sans-serif', whiteSpace: 'nowrap' }}>
+                  <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-1.5 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '15px', fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', whiteSpace: 'nowrap' }}>
                     <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center shrink-0">
-                      <svg className="w-2.5 h-2.5 text-[#2c9a6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+                      <svg className="w-2.5 h-2.5 text-[#6b6b6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
                     </div>
                     <span>Twitter / X</span>
                   </a>
@@ -128,10 +124,10 @@ export default function Footer() {
 
               {/* Support */}
               <div className="flex flex-col items-center gap-3">
-                <span style={{ fontFamily: '"Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '11px', lineHeight: '12px', whiteSpace: 'nowrap' }}>SUPPORT</span>
+                <span style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '11px', lineHeight: '12px', whiteSpace: 'nowrap' }}>SUPPORT</span>
                 <div className="flex flex-col items-center gap-2.5">
-                  <Link to="/privacy" style={{ fontFamily: '"Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '15px', lineHeight: '19px', whiteSpace: 'nowrap' }} className="hover:text-white transition-colors text-center">Privacy Policy</Link>
-                  <Link to="/terms" style={{ fontFamily: '"Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '15px', lineHeight: '19px', whiteSpace: 'nowrap' }} className="hover:text-white transition-colors text-center">Terms of use</Link>
+                  <Link to="/privacy" style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '15px', lineHeight: '19px', whiteSpace: 'nowrap' }} className="hover:text-white transition-colors text-center">Privacy Policy</Link>
+                  <Link to="/terms" style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '15px', lineHeight: '19px', whiteSpace: 'nowrap' }} className="hover:text-white transition-colors text-center">Terms of use</Link>
                 </div>
               </div>
 
@@ -143,20 +139,15 @@ export default function Footer() {
 
             {/* Left: Logo + Copyright + SOC2 */}
             <div className="col-span-5 flex flex-col items-start text-left gap-3">
-              <Link to="/" className="flex items-center gap-[2px] text-white font-['Roobert'] font-bold text-xl tracking-[-0.01em]">
-                <svg className="w-5 h-5 text-white flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-                  <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-                  <path d="M12 3v12" />
-                </svg>
-                <span>Taxwire</span>
+              <Link to="/" aria-label="SanityAI home" className="text-white">
+                <Logo className="h-5 w-auto" />
               </Link>
-              <span style={{ fontFamily: 'sans-serif', fontWeight: 400, color: 'rgba(255,255,255,0.47)', fontSize: '16px', lineHeight: 'normal' }}>Taxwire © 2026</span>
+              <span style={{ fontFamily: '"Beausite Classic Regular", sans-serif', fontWeight: 400, color: 'rgba(255,255,255,0.47)', fontSize: '16px', lineHeight: 'normal' }}>SanityAI © 2026</span>
               <div className="flex items-center gap-2 mt-1">
                 <div className="w-5 h-5 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-[7px] font-bold text-white shadow-sm border border-blue-400/20 shrink-0">
                   <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                 </div>
-                <span style={{ fontFamily: 'sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '14px', lineHeight: 'normal' }}>SOC 2 Type II Certified</span>
+                <span style={{ fontFamily: '"Beausite Classic Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '14px', lineHeight: 'normal' }}>SOC 2 Type II Certified</span>
               </div>
             </div>
 
@@ -164,22 +155,22 @@ export default function Footer() {
             <div className="col-span-7 flex flex-row justify-end items-start gap-10 xl:gap-14">
 
               <div className="flex flex-col items-start gap-3">
-                <span style={{ fontFamily: '"Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '13px', lineHeight: '12px' }}>COMPANY</span>
-                <Link to="/#careers" style={{ fontFamily: '"Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '16px', lineHeight: '19px' }} className="hover:text-white transition-colors">Careers</Link>
+                <span style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '13px', lineHeight: '12px' }}>COMPANY</span>
+                <Link to="/#careers" style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '16px', lineHeight: '19px' }} className="hover:text-white transition-colors">Careers</Link>
               </div>
 
               <div className="flex flex-col items-start gap-3">
-                <span style={{ fontFamily: '"Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '13px', lineHeight: '12px' }}>SOCIALS</span>
+                <span style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '13px', lineHeight: '12px' }}>SOCIALS</span>
                 <div className="flex flex-col items-start gap-2.5">
-                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '16px', fontFamily: '"Roobert TRIAL Regular", sans-serif' }}>
+                  <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '16px', fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif' }}>
                     <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center shrink-0">
-                      <svg className="w-2.5 h-2.5 text-[#2c9a6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
+                      <svg className="w-2.5 h-2.5 text-[#6b6b6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
                     </div>
                     LinkedIn
                   </a>
-                  <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '16px', fontFamily: '"Roobert TRIAL Regular", sans-serif' }}>
+                  <a href="https://twitter.com" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-white transition-colors" style={{ color: '#ffffff', fontSize: '16px', fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif' }}>
                     <div className="w-6 h-6 rounded-full bg-white flex items-center justify-center shrink-0">
-                      <svg className="w-2.5 h-2.5 text-[#2c9a6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+                      <svg className="w-2.5 h-2.5 text-[#6b6b6b]" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
                     </div>
                     Twitter / X
                   </a>
@@ -187,10 +178,10 @@ export default function Footer() {
               </div>
 
               <div className="flex flex-col items-start gap-3">
-                <span style={{ fontFamily: '"Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '13px', lineHeight: '12px' }}>SUPPORT</span>
+                <span style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL", sans-serif', fontWeight: 500, color: 'rgba(255,255,255,0.64)', fontSize: '13px', lineHeight: '12px' }}>SUPPORT</span>
                 <div className="flex flex-col items-start gap-2.5">
-                  <Link to="/privacy" style={{ fontFamily: '"Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '16px', lineHeight: '19px' }} className="hover:text-white transition-colors">Privacy Policy</Link>
-                  <Link to="/terms" style={{ fontFamily: '"Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '16px', lineHeight: '19px' }} className="hover:text-white transition-colors">Terms of use</Link>
+                  <Link to="/privacy" style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '16px', lineHeight: '19px' }} className="hover:text-white transition-colors">Privacy Policy</Link>
+                  <Link to="/terms" style={{ fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif', fontWeight: 400, color: '#ffffff', fontSize: '16px', lineHeight: '19px' }} className="hover:text-white transition-colors">Terms of use</Link>
                 </div>
               </div>
 
@@ -213,25 +204,20 @@ export default function Footer() {
               stroke="currentColor"
               strokeWidth="0.8"
             >
-              <g transform="translate(-42.5, 10) scale(8.5)" fill="#063a24">
-                <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-                <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-                <path d="M12 3v12" />
-              </g>
               <text
-                x="150"
+                x="40"
                 y="172"
-                fontFamily="'Roobert TRIAL Variable Medium', 'Roobert TRIAL Variable Medium Placeholder', 'Roobert TRIAL Medium', 'Roobert', sans-serif"
+                fontFamily="'Beausite Classic Regular', 'Roobert TRIAL Variable Medium', 'Roobert TRIAL Variable Medium Placeholder', 'Roobert TRIAL Medium', 'Roobert', sans-serif"
                 fontSize="200"
                 fontWeight="500"
                 letterSpacing="-0.03em"
-                textLength="650"
+                textLength="720"
                 lengthAdjust="spacingAndGlyphs"
-                fill="#063a24"
+                fill="#141414"
                 stroke="currentColor"
                 strokeWidth="0.6"
               >
-                Taxwire
+                SanityAI
               </text>
             </svg>
           </div>

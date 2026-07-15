@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Button from './Button';
+import Logo from './Logo';
 import { Menu, X } from 'lucide-react';
 import { NAV_LINKS } from '../../constants/navbar';
 
@@ -12,7 +13,7 @@ export default function Navbar() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 w-full transition-colors duration-200 ${
       isAboutPage 
-        ? 'bg-white border-b border-black/[0.06] text-[#063322]' 
+        ? 'bg-white border-b border-black/[0.06] text-[#0f0f0f]' 
         : 'bg-[var(--color-bg-dark)] border-b border-white/5 text-white'
     }`}>
       {/* 
@@ -52,32 +53,13 @@ export default function Navbar() {
       <div className="w-full h-16 flex items-center justify-between relative z-10 px-6 lg:pl-[105px] lg:pr-[105px] xl:pl-[172px] xl:pr-[172px] transition-[padding] duration-200 ease-out">
         {/* Left Side: Logo & Main Navigation */}
         <div className="flex items-center gap-[24px]">
-          {/* Taxwire Logo & Icon */}
-          <Link 
-            to="/" 
-            className={`flex items-center gap-[2px] font-['Roobert'] font-bold text-xl tracking-[-0.01em] ${
-              isAboutPage ? 'text-[#063322]' : 'text-white'
-            }`}
+          {/* SanityAI Logo */}
+          <Link
+            to="/"
+            aria-label="SanityAI home"
+            className={isAboutPage ? 'text-[#0f0f0f]' : 'text-white'}
           >
-            <svg 
-              className="w-5 h-5 flex-shrink-0" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              stroke="currentColor" 
-              strokeWidth="2.5" 
-              strokeLinecap="round" 
-              strokeLinejoin="round"
-            >
-              {/* Shield outer boundary */}
-              <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-              {/* Inner U element */}
-              <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-              {/* Inner T vertical divider */}
-              <path d="M12 3v12" />
-            </svg>
-            <span className="font-bold text-xl tracking-tight font-['Roobert']">
-              Taxwire
-            </span>
+            <Logo className="h-5 w-auto" />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-[14px] translate-y-[2px] h-full">
@@ -86,9 +68,9 @@ export default function Navbar() {
                 return (
                   <div key={link} className="relative group flex items-center h-full cursor-pointer py-4">
                     <span
-                      className={`font-['Roobert_TRIAL_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 ${
+                      className={`font-['Beausite_Classic_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 ${
                         isAboutPage 
-                          ? 'text-[#063322] group-hover:text-[#063322]/70' 
+                          ? 'text-[#0f0f0f] group-hover:text-[#0f0f0f]/70' 
                           : 'text-white group-hover:text-white/70'
                       }`}
                     >
@@ -100,13 +82,13 @@ export default function Navbar() {
                       
                       <Link 
                         to="/about" 
-                        className="font-sans text-[12px] font-medium leading-[14px] text-[#063322] hover:text-[#11734b] uppercase tracking-[0.06em] transition-colors duration-150 px-2 py-1 rounded hover:bg-black/[0.03]"
+                        className="font-sans text-[12px] font-medium leading-[14px] text-[#0f0f0f] hover:text-[#454545] uppercase tracking-[0.06em] transition-colors duration-150 px-2 py-1 rounded hover:bg-black/[0.03]"
                       >
                         About
                       </Link>
                       <Link 
                         to="/case-study" 
-                        className="font-sans text-[12px] font-medium leading-[14px] text-[#063322] hover:text-[#11734b] uppercase tracking-[0.06em] transition-colors duration-150 px-2 py-1 rounded hover:bg-black/[0.03]"
+                        className="font-sans text-[12px] font-medium leading-[14px] text-[#0f0f0f] hover:text-[#454545] uppercase tracking-[0.06em] transition-colors duration-150 px-2 py-1 rounded hover:bg-black/[0.03]"
                       >
                         Case Study
                       </Link>
@@ -119,9 +101,9 @@ export default function Navbar() {
                 <Link
                   key={link}
                   to={`/#${link.toLowerCase()}`}
-                  className={`font-['Roobert_TRIAL_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 ${
+                  className={`font-['Beausite_Classic_Regular'] text-xs font-normal leading-[14px] uppercase tracking-[0.08em] transition-colors duration-200 ${
                     isAboutPage 
-                      ? 'text-[#063322] hover:text-[#063322]/70' 
+                      ? 'text-[#0f0f0f] hover:text-[#0f0f0f]/70' 
                       : 'text-white hover:text-white/70'
                   }`}
                 >
@@ -148,7 +130,7 @@ export default function Navbar() {
             onClick={() => setMobileMenuOpen(true)}
             className={`flex items-center justify-center w-10 h-[38px] rounded-none cursor-pointer transition-all duration-200 ${
               isAboutPage 
-                ? 'bg-[#063322]/[0.08] border border-[#063322]/[0.12] text-[#063322] hover:bg-[#063322]/[0.15]' 
+                ? 'bg-[#0f0f0f]/[0.08] border border-[#0f0f0f]/[0.12] text-[#0f0f0f] hover:bg-[#0f0f0f]/[0.15]' 
                 : 'bg-white/[0.08] border border-white/[0.12] text-white hover:bg-white/[0.15]'
             }`}
             aria-label="Open menu"
@@ -162,42 +144,26 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className={`absolute top-0 left-0 right-0 z-50 flex flex-col pb-6 transition-all duration-300 ${
           isAboutPage 
-            ? 'bg-white text-[#063322] border-b border-black/[0.08]' 
-            : 'bg-[#053321] text-white'
+            ? 'bg-white text-[#0f0f0f] border-b border-black/[0.08]' 
+            : 'bg-[#0f0f0f] text-white'
         }`}>
           {/* Header row inside drawer */}
           <div className="w-full h-16 px-6 flex items-center justify-between">
             {/* Logo */}
-            <Link 
-              to="/" 
-              className={`flex items-center gap-[2px] font-['Roobert'] font-bold text-xl tracking-[-0.01em] ${
-                isAboutPage ? 'text-[#063322]' : 'text-white'
-              }`}
+            <Link
+              to="/"
+              aria-label="SanityAI home"
+              className={isAboutPage ? 'text-[#0f0f0f]' : 'text-white'}
               onClick={() => setMobileMenuOpen(false)}
             >
-              <svg 
-                className="w-5 h-5 flex-shrink-0" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2.5" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              >
-                <path d="M5 3h14v11c0 3.87-3.13 7-7 7s-7-3.13-7-7V3z" />
-                <path d="M9 7v5c0 1.66 1.34 3 3 3s3-1.34 3-3V7" />
-                <path d="M12 3v12" />
-              </svg>
-              <span className="font-bold text-xl tracking-tight font-['Roobert']">
-                Taxwire
-              </span>
+              <Logo className="h-5 w-auto" />
             </Link>
             {/* Close Button */}
             <button
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center justify-center w-10 h-10 rounded-none cursor-pointer transition-all duration-200 ${
                 isAboutPage 
-                  ? 'bg-[#063322]/[0.08] text-[#063322] hover:bg-[#063322]/[0.12]' 
+                  ? 'bg-[#0f0f0f]/[0.08] text-[#0f0f0f] hover:bg-[#0f0f0f]/[0.12]' 
                   : 'bg-white/[0.08] text-white hover:bg-white/[0.12]'
               }`}
               aria-label="Close menu"
@@ -213,8 +179,8 @@ export default function Navbar() {
                 if (link === 'PLATFORM') {
                   return (
                     <div key={link} className="flex flex-col gap-3">
-                      <span className={`font-['Roobert_TRIAL_Medium'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] ${
-                        isAboutPage ? 'text-[#063322]' : 'text-white'
+                      <span className={`font-['Beausite_Classic_Regular'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] ${
+                        isAboutPage ? 'text-[#0f0f0f]' : 'text-white'
                       }`}>
                         PLATFORM
                       </span>
@@ -230,9 +196,9 @@ export default function Navbar() {
                     key={link}
                     to={`/#${link.toLowerCase()}`}
                     onClick={() => setMobileMenuOpen(false)}
-                    className={`font-['Roobert_TRIAL_Medium'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] transition-colors duration-200 w-max ${
+                    className={`font-['Beausite_Classic_Regular'] text-[15px] font-medium leading-[18px] uppercase tracking-[0.08em] transition-colors duration-200 w-max ${
                       isAboutPage 
-                        ? 'text-[#063322] hover:text-[#063322]/70' 
+                        ? 'text-[#0f0f0f] hover:text-[#0f0f0f]/70' 
                         : 'text-white hover:text-white/70'
                     }`}
                   >

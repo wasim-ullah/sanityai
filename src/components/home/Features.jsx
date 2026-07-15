@@ -34,7 +34,7 @@ export default function Features() {
             <span
               className="block mb-4"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgba(0, 0, 0, 0.64)',
                 fontSize: '12px',
@@ -46,26 +46,21 @@ export default function Features() {
             <h2
               className="text-[var(--color-text-primary-dark)]"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
-                color: 'rgb(6, 51, 34)',
+                color: 'rgb(15, 15, 15)',
                 fontSize: '40px',
                 lineHeight: '40px'
               }}
             >
-              {FEATURES_TEXT.heading.split('\n').map((line, idx) => (
-                <React.Fragment key={idx}>
-                  {line}
-                  {idx === 0 && <br />}
-                </React.Fragment>
-              ))}
+              Built to <span className="stress">protect</span><br />you from risk
             </h2>
           </div>
           <div className="max-w-md">
             <p
               className="text-black"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '14px',
                 lineHeight: '20px'
@@ -104,15 +99,15 @@ export default function Features() {
                   <div className="flex items-center gap-3 w-full">
                     {/* Icon Container */}
                     <div className={`transition-colors duration-300 ${isActive
-                      ? 'text-[rgb(5,51,33)]'
+                      ? 'text-[rgb(15,15,15)]'
                       : isHovered
-                        ? 'text-[#2cff8e]'
+                        ? 'text-[#ffffff]'
                         : 'text-black/35'
                       }`}>
                       {React.createElement(tab.icon, {
                         size: 28,
                         strokeWidth: 1.2,
-                        fill: (isActive || isHovered) ? '#2cff8e' : 'none',
+                        fill: (isActive || isHovered) ? '#ffffff' : 'none',
                         className: 'transition-all duration-300'
                       })}
                     </div>
@@ -120,11 +115,11 @@ export default function Features() {
                     <h3
                       className="transition-colors duration-300"
                       style={{
-                        fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                        fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                         fontWeight: 500,
                         fontSize: '20px',
                         lineHeight: '20px',
-                        color: isActive ? 'rgb(5, 51, 33)' : 'rgba(5, 51, 33, 0.48)'
+                        color: isActive ? 'rgb(15, 15, 15)' : 'rgba(15, 15, 15, 0.48)'
                       }}
                     >
                       {tab.title}
@@ -134,7 +129,7 @@ export default function Features() {
                   <p
                     className="mt-2 transition-colors duration-300 text-left"
                     style={{
-                      fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                      fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                       fontWeight: 400,
                       fontSize: '16px',
                       lineHeight: '22px',
@@ -147,8 +142,8 @@ export default function Features() {
                   {/* Mobile Visualization Card (Nested inside the active tab) */}
                   {isActive && (
                     <div className="lg:hidden mt-6 w-full flex justify-center">
-                      <div className="relative w-full max-w-[500px] aspect-[327.2/400] bg-[#063322] border border-white/5 rounded-none shadow-2xl overflow-hidden flex items-center justify-center p-8">
-                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(46,184,126,0.08)_0%,transparent_70%)] pointer-events-none"></div>
+                      <div className="relative w-full max-w-[500px] aspect-[327.2/400] bg-[#0f0f0f] border border-white/5 rounded-none shadow-2xl overflow-hidden flex items-center justify-center p-8">
+                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(209,209,209,0.08)_0%,transparent_70%)] pointer-events-none"></div>
                         <div className="w-full h-full flex items-center justify-center">
                           {activeTab === 0 && <UnderstandMockup />}
                           {activeTab === 1 && <RegisterMockup />}
@@ -166,9 +161,9 @@ export default function Features() {
           {/* Right Column: Visualization Card (Only visible on desktop) */}
           <div className="hidden lg:flex lg:col-span-7 justify-center lg:justify-end w-full pt-0 lg:translate-x-[calc(50vw-710px)]">
             {/* Box typestyle with gray-colored borders matching the inspect properties: size 500x640px */}
-            <div className="relative w-full max-w-[500px] aspect-[327.2/400] bg-[#063322] border border-white/5 rounded-none shadow-2xl overflow-hidden flex items-center justify-center p-8">
+            <div className="relative w-full max-w-[500px] aspect-[327.2/400] bg-[#0f0f0f] border border-white/5 rounded-none shadow-2xl overflow-hidden flex items-center justify-center p-8">
               {/* Pulsing light green background glow */}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(46,184,126,0.08)_0%,transparent_70%)] pointer-events-none"></div>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(209,209,209,0.08)_0%,transparent_70%)] pointer-events-none"></div>
 
               {/* Active tab content switcher with transition animations */}
               <div className="w-full h-full flex items-center justify-center transition-all duration-500">

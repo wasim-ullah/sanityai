@@ -72,7 +72,7 @@ export default function CaseStudyDetail() {
         <div className="w-full lg:w-[216px] flex-shrink-0 flex flex-col border-b lg:border-b-0 lg:border-r border-black/[0.08] pb-12 lg:pb-0">
 
           {/* Sidebar Dark Green Card Container (sticky, top 88px, width 216px, padding 6px) */}
-          <div className="w-full sticky top-[30px] h-fit bg-[#063322] border border-white/10 p-[6px] flex flex-col rounded-none select-none z-10">
+          <div className="w-full sticky top-[30px] h-fit bg-[#0f0f0f] border border-white/10 p-[6px] flex flex-col rounded-none select-none z-10">
 
             {/* Top Logo Container (size: 204 x 64 with transparent white background) */}
             <div className="w-full h-[64px] bg-white/[0.04] flex items-center justify-center p-2 rounded-none mb-4">
@@ -96,7 +96,7 @@ export default function CaseStudyDetail() {
               <div className="flex flex-col gap-2 text-left mb-3">
                 <span
                   style={{
-                    fontFamily: '"Roobert TRIAL Medium", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", sans-serif',
                     fontWeight: 500,
                     fontSize: '12px',
                     letterSpacing: '0.08em',
@@ -108,7 +108,7 @@ export default function CaseStudyDetail() {
                 </span>
                 <p
                   style={{
-                    fontFamily: '"Roobert TRIAL Regular", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif',
                     fontWeight: 400,
                     fontSize: '14px',
                     lineHeight: '20px'
@@ -126,7 +126,7 @@ export default function CaseStudyDetail() {
               <div className="flex flex-col gap-2 text-left mb-4">
                 <span
                   style={{
-                    fontFamily: '"Roobert TRIAL Medium", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", sans-serif',
                     fontWeight: 500,
                     fontSize: '12px',
                     letterSpacing: '0.08em',
@@ -138,7 +138,7 @@ export default function CaseStudyDetail() {
                 </span>
                 <p
                   style={{
-                    fontFamily: '"Roobert TRIAL Regular", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", sans-serif',
                     fontWeight: 400,
                     fontSize: '14px',
                     lineHeight: '20px'
@@ -152,7 +152,7 @@ export default function CaseStudyDetail() {
               {/* Bottom White CTA Button (size: 204 x 32) */}
               <a
                 href="#demo"
-                className="w-full h-[32px] bg-white text-[#063322] flex items-center justify-center gap-1.5 font-sans font-bold text-[11px] tracking-wider uppercase rounded-none transition-colors duration-150 hover:bg-[#2cff8e] hover:text-[#063322]"
+                className="w-full h-[32px] bg-white text-[#0f0f0f] flex items-center justify-center gap-1.5 font-sans font-bold text-[11px] tracking-wider uppercase rounded-none transition-colors duration-150 hover:bg-[#ffffff] hover:text-[#0f0f0f]"
               >
                 <span>{details.buttonText}</span>
                 <svg viewBox="0 0 24 24" className="w-3 h-3" fill="none" stroke="currentColor" strokeWidth="3">
@@ -177,12 +177,12 @@ export default function CaseStudyDetail() {
               <Link
                 to="/case-study"
                 style={{
-                  fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                   fontWeight: 400,
                   fontSize: '14px',
                   lineHeight: '20px',
                   letterSpacing: '0.04em',
-                  color: 'rgba(5, 51, 33, 0.73)',
+                  color: 'rgba(15, 15, 15, 0.73)',
                   textDecoration: 'none'
                 }}
                 className="hover:underline"
@@ -191,17 +191,17 @@ export default function CaseStudyDetail() {
               </Link>
               <span
                 style={{
-                  color: 'rgba(5, 51, 33, 0.5)',
+                  color: 'rgba(15, 15, 15, 0.5)',
                   fontSize: '14px',
                   lineHeight: '20px',
-                  fontFamily: 'Inter, sans-serif'
+                  fontFamily: '"Beausite Classic Regular", Inter, sans-serif'
                 }}
               >
                 &gt;
               </span>
               <span
                 style={{
-                  fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                   fontWeight: 400,
                   fontSize: '14px',
                   lineHeight: '20px',
@@ -216,7 +216,7 @@ export default function CaseStudyDetail() {
             {/* Article Title — 40px/40px, black, Roobert Medium */}
             <h1
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
                 fontSize: '40px',
                 lineHeight: '40px',
@@ -246,11 +246,11 @@ export default function CaseStudyDetail() {
                 {section.heading && (
                   <h2
                     style={{
-                      fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                      fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                       fontWeight: 500,
                       fontSize: '40px',
                       lineHeight: '40px',
-                      color: 'rgb(6, 51, 34)'
+                      color: 'rgb(15, 15, 15)'
                     }}
                     className="mb-5"
                   >
@@ -267,7 +267,7 @@ export default function CaseStudyDetail() {
                         <p
                           key={iIdx}
                           style={{
-                            fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                             fontWeight: 400,
                             fontSize: '16px',
                             lineHeight: '22px',
@@ -284,10 +284,10 @@ export default function CaseStudyDetail() {
                         <blockquote
                           key={iIdx}
                           style={{
-                            borderLeft: '2px solid rgb(6, 51, 34)',
+                            borderLeft: '2px solid rgb(15, 15, 15)',
                             paddingLeft: '16px',
                             marginLeft: '0',
-                            fontFamily: '"Roobert TRIAL Regular Italic", "Roobert TRIAL Regular Italic Placeholder", sans-serif',
+                            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular Italic", "Roobert TRIAL Regular Italic Placeholder", sans-serif',
                             fontStyle: 'italic',
                             fontWeight: 400,
                             fontSize: '16px',
@@ -310,18 +310,18 @@ export default function CaseStudyDetail() {
                             >
                               <span
                                 style={{
-                                  fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                                  fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                                   fontWeight: 500,
                                   fontSize: '20px',
                                   lineHeight: '24px',
-                                  color: 'rgb(6, 51, 34)'
+                                  color: 'rgb(15, 15, 15)'
                                 }}
                               >
                                 {m.stat}
                               </span>
                               <span
                                 style={{
-                                  fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                                  fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                                   fontWeight: 400,
                                   fontSize: '12px',
                                   lineHeight: '16px',
@@ -344,7 +344,7 @@ export default function CaseStudyDetail() {
                               {/* Small dot bullet matching reference */}
                               <span
                                 style={{
-                                  fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                                  fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                                   fontSize: '16px',
                                   lineHeight: '22px',
                                   color: 'rgb(102, 102, 102)',
@@ -356,7 +356,7 @@ export default function CaseStudyDetail() {
                               </span>
                               <span
                                 style={{
-                                  fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                                  fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                                   fontWeight: 400,
                                   fontSize: '16px',
                                   lineHeight: '22px',
@@ -390,11 +390,11 @@ export default function CaseStudyDetail() {
             {details.ctaHeading && (
               <div
                 className="w-full mt-6 p-8"
-                style={{ background: 'rgb(6, 51, 34)' }}
+                style={{ background: 'rgb(15, 15, 15)' }}
               >
                 <h3
                   style={{
-                    fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                     fontWeight: 500,
                     fontSize: '32px',
                     lineHeight: '36px',
@@ -409,17 +409,17 @@ export default function CaseStudyDetail() {
                   className="inline-flex items-center gap-2 px-5 py-2.5 text-xs font-semibold uppercase tracking-wider transition-all duration-200"
                   style={{
                     border: '1px solid rgb(255, 255, 255)',
-                    color: 'rgb(6, 51, 34)',
+                    color: 'rgb(15, 15, 15)',
                     background: 'rgb(255, 255, 255)'
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.background = '#2cff8e';
-                    e.currentTarget.style.color = 'rgb(6, 51, 34)';
-                    e.currentTarget.style.borderColor = '#2cff8e';
+                    e.currentTarget.style.background = '#ffffff';
+                    e.currentTarget.style.color = 'rgb(15, 15, 15)';
+                    e.currentTarget.style.borderColor = '#ffffff';
                   }}
                   onMouseLeave={e => {
                     e.currentTarget.style.background = 'rgb(255, 255, 255)';
-                    e.currentTarget.style.color = 'rgb(6, 51, 34)';
+                    e.currentTarget.style.color = 'rgb(15, 15, 15)';
                     e.currentTarget.style.borderColor = 'rgb(255, 255, 255)';
                   }}
                 >
@@ -442,7 +442,7 @@ export default function CaseStudyDetail() {
         <div 
           className="w-full px-6 lg:pl-[162px] lg:pr-[162px] py-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4"
           style={{
-            fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
             fontWeight: 400,
             fontSize: '18px',
             lineHeight: '22px',
@@ -459,7 +459,7 @@ export default function CaseStudyDetail() {
         <h2 
           className="mb-12 text-center"
           style={{
-            fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
             fontWeight: 500,
             fontSize: '40px',
             lineHeight: '40px',
@@ -483,7 +483,7 @@ export default function CaseStudyDetail() {
             <span 
               className="mb-4"
               style={{
-                fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '16px',
                 lineHeight: '16px',
@@ -495,7 +495,7 @@ export default function CaseStudyDetail() {
             <span 
               className="mb-2 uppercase tracking-wider"
               style={{
-                fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '14px',
                 lineHeight: '20px',
@@ -506,7 +506,7 @@ export default function CaseStudyDetail() {
             </span>
             <h4 
               style={{
-                fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '20px',
                 lineHeight: '24px',
@@ -530,7 +530,7 @@ export default function CaseStudyDetail() {
             <div className="w-full flex justify-end mb-4">
               <span 
                 style={{
-                  fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                  fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                   fontWeight: 400,
                   fontSize: '16px',
                   lineHeight: '16px',
@@ -543,7 +543,7 @@ export default function CaseStudyDetail() {
             <span 
               className="mb-2 uppercase tracking-wider"
               style={{
-                fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '14px',
                 lineHeight: '20px',
@@ -554,7 +554,7 @@ export default function CaseStudyDetail() {
             </span>
             <h4 
               style={{
-                fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '20px',
                 lineHeight: '24px',

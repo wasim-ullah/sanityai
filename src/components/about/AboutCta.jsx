@@ -9,9 +9,9 @@ export default function AboutCta() {
         {/* Centered Heading */}
         <h2 
           style={{
-            fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
             fontWeight: 500,
-            color: 'rgb(6, 51, 34)',
+            color: 'rgb(15, 15, 15)',
             fontSize: '40px',
             lineHeight: '40px'
           }}
@@ -23,7 +23,7 @@ export default function AboutCta() {
         {/* 162 x 32 Action Button */}
         <button 
           style={{
-            backgroundColor: '#063322',
+            backgroundColor: '#0f0f0f',
             borderRadius: '0px',
             width: '162px',
             height: '32px',
@@ -33,11 +33,11 @@ export default function AboutCta() {
             gap: '8px',
             transition: 'background-color 0.2s ease'
           }}
-          className="hover:bg-[#11734b] text-white uppercase flex-shrink-0"
+          className="hover:bg-[#454545] text-white uppercase flex-shrink-0"
         >
           <span
             style={{
-              fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
               fontWeight: 500,
               color: 'rgb(255, 255, 255)',
               fontSize: '12px',

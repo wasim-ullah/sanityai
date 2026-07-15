@@ -18,7 +18,7 @@ export default function Implementation() {
   // Minimalist checkmark icon
   const CheckIcon = ({ isActive }) => (
     <svg 
-      className={`w-4 h-4 shrink-0 transition-colors duration-500 ${isActive ? 'text-[#11734b]' : 'text-black/15'}`} 
+      className={`w-4 h-4 shrink-0 transition-colors duration-500 ${isActive ? 'text-[#454545]' : 'text-black/15'}`} 
       viewBox="0 0 24 24" 
       fill="none" 
       stroke="currentColor" 
@@ -55,7 +55,7 @@ export default function Implementation() {
             <span
               className="block mb-4 uppercase"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(0, 0, 0)',
                 fontSize: '12px',
@@ -66,9 +66,9 @@ export default function Implementation() {
               {IMPLEMENTATION_TEXT.eyebrow}
             </span>
             <h2
-              className="text-[28px] sm:text-4xl md:text-[40px] leading-[34px] sm:leading-[40px] mb-4 text-[#063322]"
+              className="text-[28px] sm:text-4xl md:text-[40px] leading-[34px] sm:leading-[40px] mb-4 text-[#0f0f0f]"
               style={{
-                fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                 fontWeight: 500,
                 letterSpacing: '-0.02em'
               }}
@@ -77,7 +77,7 @@ export default function Implementation() {
             </h2>
             <p
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 color: 'rgb(0, 0, 0)',
                 fontSize: '14px',
@@ -99,7 +99,7 @@ export default function Implementation() {
             <div className="absolute left-[30px] right-[30px] sm:left-[40px] sm:right-[40px] top-1/2 -translate-y-1/2 h-[1px] bg-black/[0.06] pointer-events-none"></div>
             {/* Green Progress Fill Line */}
             <div 
-              className="absolute left-[30px] sm:left-[40px] top-1/2 -translate-y-1/2 h-[1px] bg-[#11734b] pointer-events-none transition-all duration-1000"
+              className="absolute left-[30px] sm:left-[40px] top-1/2 -translate-y-1/2 h-[1px] bg-[#454545] pointer-events-none transition-all duration-1000"
               style={{
                 width: activeStep === 0 ? '0%' : activeStep === 1 ? '50%' : '100%',
                 right: activeStep === 0 ? 'auto' : activeStep === 1 ? 'auto' : '30px',
@@ -116,11 +116,11 @@ export default function Implementation() {
                   onClick={() => setActiveStep(stage.activeAt)}
                   className={`relative z-10 flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 transition-all duration-500 rounded-none text-[10px] sm:text-xs font-semibold uppercase tracking-[0.05em] sm:tracking-[0.08em] ${
                     isActive 
-                      ? 'bg-[#11734b] text-white border border-[#11734b]' 
+                      ? 'bg-[#454545] text-white border border-[#454545]' 
                       : 'bg-white text-black/60 border border-black/[0.08] hover:border-black/25'
                   }`}
                   style={{
-                    fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                     lineHeight: '17px'
                   }}
                 >
@@ -140,7 +140,7 @@ export default function Implementation() {
                   key={idx} 
                   className={`w-full max-w-[342px] p-6 rounded-none flex flex-col justify-start text-left transition-all duration-500 border ${
                     isActive 
-                      ? 'bg-[#f4faf7] border-[#11734b] shadow-none' 
+                      ? 'bg-[#fafafa] border-[#454545] shadow-none' 
                       : 'bg-[#fafafa] border-black/5 shadow-none'
                   }`}
                 >
@@ -153,13 +153,13 @@ export default function Implementation() {
                         </div>
                         <span 
                           style={{
-                            fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                             fontWeight: 400,
                             fontSize: '14px',
                             lineHeight: '20px'
                           }}
                           className={`transition-colors duration-500 ${
-                            isActive ? 'text-[rgba(6,51,34,0.85)]' : 'text-black/40'
+                            isActive ? 'text-[rgba(15,15,15,0.85)]' : 'text-black/40'
                           }`}
                         >
                           {item}

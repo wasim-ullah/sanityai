@@ -17,7 +17,7 @@ const imageMap = {
 
 export default function CaseStudy() {
   return (
-    <div className="relative w-full bg-[#053321] text-white min-h-screen pt-20 overflow-hidden flex flex-col items-center">
+    <div className="relative w-full bg-[#0f0f0f] text-white min-h-screen pt-20 overflow-hidden flex flex-col items-center">
       
       {/* 
         Symmetric Left & Right Grid Guidelines in the background.
@@ -44,7 +44,7 @@ export default function CaseStudy() {
         {/* Centered Eyebrow */}
         <span 
           style={{
-            fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
             fontWeight: 400,
             color: 'rgba(255, 255, 255, 0.8)',
             fontSize: '14px',
@@ -59,18 +59,13 @@ export default function CaseStudy() {
         {/* Centered Heading */}
         <h1 
           style={{
-            fontFamily: '"Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
+            fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Variable Light", "Roobert TRIAL Variable Light Placeholder", sans-serif',
             fontWeight: 300,
             color: 'rgb(255, 255, 255)'
           }}
           className="text-4xl sm:text-5xl md:text-[64px] leading-tight md:leading-[64px] tracking-tight text-center max-w-4xl"
         >
-          {CASE_STUDY_HERO.title.split('\n').map((line, idx) => (
-            <React.Fragment key={idx}>
-              {line}
-              {idx === 0 && <br className="hidden md:inline" />}
-            </React.Fragment>
-          ))}
+          Real <span className="stress">results</span> from real<br className="hidden md:inline" />companies
         </h1>
       </section>
 
@@ -83,11 +78,11 @@ export default function CaseStudy() {
           
           {/* Centered Heading & Bullet */}
           <div className="flex items-center justify-center mb-6">
-            <span className="w-1.5 h-1.5 bg-[#2eb87e] mr-2.5"></span>
+            <span className="w-1.5 h-1.5 bg-[#d1d1d1] mr-2.5"></span>
             <span
               className="text-white/60"
               style={{
-                fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                 fontWeight: 400,
                 fontSize: '14px',
                 lineHeight: '20px'
@@ -100,7 +95,7 @@ export default function CaseStudy() {
           {/* Logo Wall grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-full">
             {TRUSTED_COMPANIES.map((company, index) => (
-              <div key={index} className="bg-[#0f3b2a] border border-white/5 flex items-center justify-center h-[56px] transition-colors duration-150">
+              <div key={index} className="bg-[#191919] border border-white/5 flex items-center justify-center h-[56px] transition-colors duration-150">
                 {company.hasIcon === 'middesk' && (
                   <div className="flex items-center gap-2">
                     <svg className="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="currentColor">
@@ -116,7 +111,7 @@ export default function CaseStudy() {
                     <svg className="w-5 h-5 text-white/90" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path d="M12 3 L20 11 L12 19 L4 11 Z" />
                     </svg>
-                    <span className="text-white font-bold text-base tracking-wide font-['Roobert']">{company.name}</span>
+                    <span className="text-white font-bold text-base tracking-wide font-['Beausite_Classic_Regular']">{company.name}</span>
                   </div>
                 )}
                 {!company.hasIcon && (
@@ -152,7 +147,7 @@ export default function CaseStudy() {
           {/* Centered Heading */}
           <h2
             style={{
-              fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
               fontWeight: 500,
               color: 'rgb(0, 0, 0)',
               fontSize: '40px',
@@ -188,9 +183,9 @@ export default function CaseStudy() {
                 
                 <h3
                   style={{
-                    fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+                    fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
                     fontWeight: 500,
-                    color: 'rgb(6, 51, 34)',
+                    color: 'rgb(15, 15, 15)',
                     fontSize: '32px',
                     lineHeight: '35px'
                   }}
@@ -203,10 +198,10 @@ export default function CaseStudy() {
               {/* Bottom full-width button */}
               <Link to="/case-study/levanta-control" className="w-full">
                 <div className="py-[10px] px-4 border-t border-black/[0.08] flex items-center justify-between w-full cursor-pointer hover:bg-black/[0.02] transition-colors duration-150">
-                  <span className="font-sans text-[13px] font-medium text-[#063322] tracking-wide">
+                  <span className="font-sans text-[13px] font-medium text-[#0f0f0f] tracking-wide">
                     {FEATURED_CASE_STUDY.buttonText}
                   </span>
-                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 text-[#063322]" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 text-[#0f0f0f]" fill="none" stroke="currentColor" strokeWidth="2.5">
                     <path d="M7 17L17 7M17 7H7M17 7V17" strokeLinecap="round" strokeLinejoin="round" />
                   </svg>
                 </div>
@@ -242,7 +237,7 @@ export default function CaseStudy() {
           {/* Centered Heading */}
           <h2
             style={{
-              fontFamily: '"Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
+              fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Medium", "Roobert TRIAL Medium Placeholder", sans-serif',
               fontWeight: 500,
               color: 'rgb(0, 0, 0)',
               fontSize: '40px',
@@ -274,7 +269,7 @@ export default function CaseStudy() {
                       <span className="w-2 h-2 rounded-full border border-[#666666] mr-2 inline-block shrink-0"></span>
                       <span 
                         style={{
-                          fontFamily: '"Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
+                          fontFamily: '"Beausite Classic Regular", "Roobert TRIAL Regular", "Roobert TRIAL Regular Placeholder", sans-serif',
                           fontWeight: 400,
                           color: 'rgb(102, 102, 102)',
                           fontSize: '16px',
@@ -287,7 +282,7 @@ export default function CaseStudy() {
                     {/* Title */}
                     <h3
                       style={{
-                        fontFamily: 'Inter, "Inter Placeholder", sans-serif',
+                        fontFamily: '"Beausite Classic Regular", Inter, "Inter Placeholder", sans-serif',
                         fontWeight: 400,
                         color: 'rgb(0, 0, 0)',
                         fontSize: '24px',
@@ -303,10 +298,10 @@ export default function CaseStudy() {
                 {/* Bottom button */}
                 <Link to={`/case-study/${card.id}`} className="w-full">
                   <div className="py-[10px] px-4 border-t border-black/[0.08] flex items-center justify-between w-full cursor-pointer hover:bg-black/[0.02] transition-colors duration-150">
-                    <span className="font-sans text-[13px] font-medium text-[#063322] tracking-wide">
+                    <span className="font-sans text-[13px] font-medium text-[#0f0f0f] tracking-wide">
                       {card.buttonText}
                     </span>
-                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 text-[#063322]" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <svg viewBox="0 0 24 24" className="w-3.5 h-3.5 text-[#0f0f0f]" fill="none" stroke="currentColor" strokeWidth="2.5">
                       <path d="M7 17L17 7M17 7H7M17 7V17" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                   </div>
